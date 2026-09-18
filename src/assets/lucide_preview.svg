@@ -1,0 +1,33 @@
+<svg width="450" height="150" viewBox="0 0 450 150" xmlns="http://www.w3.org/2000/svg" style="background:#181818;">
+  <!-- Icon 1: Layers -->
+  <g transform="translate(50, 45)">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+      <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+      <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>
+    </svg>
+    <text x="24" y="70" fill="white" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Visual Design</text>
+  </g>
+
+  <!-- Icon 2: Users -->
+  <g transform="translate(190, 45)">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </svg>
+    <text x="24" y="70" fill="white" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">User Research</text>
+  </g>
+
+  <!-- Icon 3: PenTool -->
+  <g transform="translate(330, 45)">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12 19 7-7 3 3-7 7-3-3z"/>
+      <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+      <path d="m2 2 7.586 7.586"/>
+      <circle cx="11" cy="11" r="2"/>
+    </svg>
+    <text x="24" y="70" fill="white" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Prototyping</text>
+  </g>
+</svg>
