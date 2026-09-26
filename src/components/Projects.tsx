@@ -11,15 +11,15 @@ interface Project {
 export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'Website Design',
+      title: 'Mobirevo Enterprise Platform & SaaS Suite',
       image: mockupWebsite,
     },
     {
-      title: 'App Design',
+      title: 'Ravex Financial & Mobile Architecture',
       image: mockupApp,
     },
     {
-      title: 'Landing Page',
+      title: 'Otto & Partners Enterprise Systems',
       image: mockupLanding,
     },
   ];

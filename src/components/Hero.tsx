@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
             Hi, I’m Ikechukwu Emmanuel Akwue.
           </h1>
           <p className="text-xl sm:text-2xl text-[#9a9a9f] font-normal leading-relaxed mb-8">
-            Founder & <span className="text-[#3b82f6] font-semibold">Technical Project Manager</span> with 10+ years experience building scalable digital platforms and software solutions.
+            Faith-driven Entrepreneur, 3x Founder & <span className="text-[#3b82f6] font-semibold">Quantic MBA</span> | Member ForbesBLK | Technical Project Manager & Founder building bespoke software solutions for business growth.
           </p>
           
           {/* Social links: LinkedIn, Instagram, TikTok (Identical size & optical balance) */}
@@ -62,13 +62,13 @@ export const Hero: React.FC = () => {
       {/* Narrative Bio */}
       <div className="space-y-6 text-[#8e8e93] text-base sm:text-[17px] leading-[1.8] font-normal max-w-3xl">
         <p>
-          I am an entrepreneur, technical project manager, and system analyst dedicated to turning ambitious visions into robust digital reality. Over the past decade, I have driven the strategy and delivery of scalable web applications, mobile platforms, and enterprise solutions across global ecosystems.
+          I am a dynamic and accomplished Systems Analyst and Technical Project Manager with a proven track record of delivering exceptional results. My passion for technology and user-centered design has led me on a nonlinear career path, gaining invaluable experience across multiple industries and leadership roles.
         </p>
         <p>
-          In 2016, I co-founded Mobirevo to help forward-thinking enterprises and startups build high-performance software. Over the years, I have spearheaded cross-functional engineering teams, guided architectural decisions, and shipped impactful solutions across fintech, business services, and digital infrastructure.
+          I began my career as a Visual and Graphic Designer, transitioned to a Senior UX/UI Designer, and evolved into software development and project management. This diverse background gives me a robust understanding of programming languages, core software architecture design, and deep expertise in DevOps tools and Agile methodologies.
         </p>
         <p>
-          Today, my focus centers on technical systems architecture, AI-driven agile delivery, and championing innovative software frameworks that scale reliably and deliver measurable business value.
+          Currently, I am the Founder and Systems Analyst/Technical Project Manager at Mobirevo, a bespoke software development company. Here, I lead cross-functional teams delivering innovative digital products—including social media chat apps, SaaS applications, fintech platforms, business intelligence software, and blockchain solutions that foster growth and give our clients a distinct market advantage.
         </p>
       </div>
     </section>

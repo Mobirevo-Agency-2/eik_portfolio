@@ -6,7 +6,6 @@ import {
   Leaf,
   Brain,
   Award,
-  Sparkles,
   FileCheck,
   Compass,
   CheckCircle2,
@@ -148,31 +147,31 @@ export const FutureActionSummitPage: React.FC = () => {
                 10+
               </div>
               <div className="text-xs sm:text-sm font-medium text-[#8e8e93]">
-                Years Driving Global Impact
+                Years in Tech & Systems
               </div>
             </div>
             <div className="p-5 rounded-2xl bg-[#1c1c1e] border border-white/[0.05]">
               <div className="text-3xl sm:text-4xl font-extrabold text-white mb-1">
-                14M+
+                3x
               </div>
               <div className="text-xs sm:text-sm font-medium text-[#8e8e93]">
-                Users Reached on Scaled Systems
+                Founder (Mobirevo, Ravex, Otto)
               </div>
             </div>
             <div className="p-5 rounded-2xl bg-[#1c1c1e] border border-white/[0.05]">
               <div className="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">
-                38%
+                MBA
               </div>
               <div className="text-xs sm:text-sm font-medium text-[#8e8e93]">
-                Digital Carbon Waste Reduced
+                Quantic School of Business & Tech
               </div>
             </div>
             <div className="p-5 rounded-2xl bg-[#1c1c1e] border border-white/[0.05]">
               <div className="text-3xl sm:text-4xl font-extrabold text-white mb-1">
-                18+
+                Member
               </div>
               <div className="text-xs sm:text-sm font-medium text-[#8e8e93]">
-                Cross-Border Public Initiatives
+                ForbesBLK Global Network
               </div>
             </div>
           </div>
@@ -252,13 +251,13 @@ export const FutureActionSummitPage: React.FC = () => {
 
               <div className="space-y-4 text-base sm:text-lg text-[#a1a1a6] leading-relaxed">
                 <p>
-                  Australia stands at the forefront of international climate transition leadership, indigenous environmental stewardship, and forward-looking digital policy. The Future Action Summit represents a pivotal convergence point where global leaders formulate the tangible blueprints for tomorrow.
+                  As a faith-driven entrepreneur, 3x founder (Mobirevo, Ravex, Otto & Partners), Quantic MBA, and ForbesBLK member building bespoke software solutions for African and global business growth, my participation at the Future Action Summit in Australia bridges emerging market digital architecture with global sustainability and technology governance.
                 </p>
                 <p>
-                  As an official delegate, my objective is twofold: first, to present our battle-tested methodologies on decarbonizing large-scale software platforms and implementing ethical algorithmic controls; second, to actively absorb the groundbreaking insights from Australian researchers, policymakers, and civic innovators to synthesize cross-continental action plans.
+                  Australia stands at the forefront of international climate transition leadership, regional technological resilience, and forward-looking digital policy. The Future Action Summit represents a vital convergence point where international leaders formulate actionable blueprints for an equitable, technology-enabled future.
                 </p>
                 <p className="text-white font-medium">
-                  I am prepared to actively participate in summit roundtables, contribute to open policy whitepapers, and serve as an energetic ambassador representing sustainable digital transformation.
+                  As an official delegate, my objective is twofold: first, to share our proven methodologies on systems analysis, technical project management, and scalable digital infrastructure; second, to collaborate with Australian researchers, policymakers, and civic innovators to synthesize cross-continental action plans.
                 </p>
               </div>
 
@@ -276,7 +275,7 @@ export const FutureActionSummitPage: React.FC = () => {
                       Ikechukwu Emmanuel Akwue
                     </div>
                     <div className="text-xs text-[#8e8e93]">
-                      Founder & Managing Director, Mobirevo • Technology Leader
+                      3x Founder & Systems Analyst • Quantic MBA • Member ForbesBLK
                     </div>
                   </div>
                 </div>
@@ -321,18 +320,18 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                   <h3 className="text-xl font-bold text-white">
-                    Principal Product & Sustainability Strategist
+                    System Analyst & Technical Project Manager
                   </h3>
                 </div>
                 <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  2022 - Present
+                  Feb 2021 - Present
                 </span>
               </div>
               <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Horizon Global Initiatives • Cross-Continental Architecture
+                Mobirevo • Port Harcourt, Rivers State, Nigeria
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Formulated enterprise-wide green design systems across 14 cloud applications, cutting digital emissions by 38% while improving accessibility standards for 14M+ active global users. Advised international steering committees on responsible procurement and algorithmic fairness.
+                Directing systems analysis, technical requirements architecture, and software project management. Coordinating engineering teams to engineer, test, and deploy resilient, high-performance web and mobile enterprise applications.
               </p>
             </div>
 
@@ -342,18 +341,18 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                   <h3 className="text-xl font-bold text-white">
-                    Lead Innovation Architect & Policy Fellow
+                    Founder & Chief Executive Officer
                   </h3>
                 </div>
                 <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  2019 - 2022
+                  Sep 2023 - Present
                 </span>
               </div>
               <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Terra Nova Climate Tech • Asia-Pacific Regional Hub
+                Ravex • Lagos State, Nigeria
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Built open climate data visualization platforms deployed across municipal stakeholders in the Asia-Pacific region. Synthesized complex environmental sensor feeds into intuitive crisis mitigation portals recognized by environmental regulatory councils.
+                Spearheading product vision, technical architecture, and strategic growth for scalable fintech and digital solutions. Driving operational execution and system integrity for mission-critical client solutions.
               </p>
             </div>
 
@@ -363,18 +362,18 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                   <h3 className="text-xl font-bold text-white">
-                    Senior Product Experience Designer
+                    ForbesBLK Member
                   </h3>
                 </div>
                 <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  2016 - 2019
+                  Sep 2023 - Present
                 </span>
               </div>
               <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Aetheria Labs • AI Ethics Division
+                ForbesBLK • Global Network
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Spearheaded design oversight on predictive machine learning interfaces for healthcare and emergency relief distribution, ensuring transparency, explainability, and unbiased resource allocation.
+                Active member within the curated ForbesBLK global network of business executives, leaders, and entrepreneurs championing systemic change, economic equity, and community investment.
               </p>
             </div>
 
@@ -384,80 +383,86 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                   <h3 className="text-xl font-bold text-white">
-                    Lead Digital Systems Specialist
+                    Founder & Business Development Manager
                   </h3>
                 </div>
                 <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  2013 - 2016
+                  Feb 2018 - Jan 2021
                 </span>
               </div>
               <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                NextWave Digital • Regional Connectivity Initiative
+                Mobirevo • Port Harcourt, Nigeria
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Engineered low-bandwidth, accessible mobile web applications delivering critical educational and civic services to remote regional communities with severe network constraints.
+                Established Mobirevo as a bespoke software and product design firm. Led cross-functional teams delivering high-standard software solutions, client relationships, and business growth across Nigeria and international markets.
+              </p>
+            </div>
+
+            {/* Experience Item 5 */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <h3 className="text-xl font-bold text-white">
+                    Co-Founder & Technical Project Manager [Exited]
+                  </h3>
+                </div>
+                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
+                  Aug 2017 - Aug 2020
+                </span>
+              </div>
+              <div className="text-sm font-medium text-[#8e8e93] mb-4">
+                Otto & Partners • Kampala, Uganda
+              </div>
+              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
+                Co-founded and managed technical product pipelines, digital consulting, and enterprise project operations in East Africa before completing a successful founder exit.
               </p>
             </div>
           </div>
         </section>
 
-        {/* 5. EDUCATION & GLOBAL FELLOWSHIPS */}
+        {/* 5. EDUCATION & ACADEMIC CREDENTIALS */}
         <section className="py-16 sm:py-20 border-t border-white/[0.08]">
           <div className="max-w-2xl mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 block">
               Academic Background
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-              Education & Global Fellowships
+              Education & Academic Foundation
             </h2>
             <p className="text-sm sm:text-base text-[#8e8e93] mt-2">
-              Advanced qualifications combining software architecture with sustainable leadership.
+              Advanced qualifications combining global business administration with computer and electronics engineering.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 sm:p-7 rounded-2xl bg-[#1c1c1e] border border-white/[0.06]">
               <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                2020 - 2022
+                Jul 2024 - Sep 2025
               </div>
               <h3 className="text-lg font-bold text-white mb-1">
-                M.S. in Sustainable Technology & HCI
+                Master of Business Administration - MBA
               </h3>
               <div className="text-sm text-[#8e8e93] mb-3">
-                Global Innovation Institute (Melbourne Exchange)
+                Quantic School of Business and Technology • Business Administration and Management, General
               </div>
               <p className="text-xs text-[#a1a1a6] leading-relaxed">
-                Thesis on carbon-neutral client interactions and edge data architectures for climate-sensitive regional services.
+                Elite modern executive business curriculum focusing on strategic management, data analysis, organizational leadership, and technology venture governance.
               </p>
             </div>
 
             <div className="p-6 sm:p-7 rounded-2xl bg-[#1c1c1e] border border-white/[0.06]">
               <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                2018 - 2019
+                Undergraduate Degree
               </div>
               <h3 className="text-lg font-bold text-white mb-1">
-                Executive Leadership in Climate Policy
+                Bachelor of Engineering - BE
               </h3>
               <div className="text-sm text-[#8e8e93] mb-3">
-                Cambridge Institute for Sustainability Leadership (CISL)
+                University of Port Harcourt • Electronics and Computer Engineering
               </div>
               <p className="text-xs text-[#a1a1a6] leading-relaxed">
-                Strategic governance, cross-border carbon accounting, and public-private sustainability consortium frameworks.
-              </p>
-            </div>
-
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#1c1c1e] border border-white/[0.06]">
-              <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                2009 - 2013
-              </div>
-              <h3 className="text-lg font-bold text-white mb-1">
-                B.S. in Digital Systems & Interface Architecture
-              </h3>
-              <div className="text-sm text-[#8e8e93] mb-3">
-                University School of Engineering & Design
-              </div>
-              <p className="text-xs text-[#a1a1a6] leading-relaxed">
-                First Class Honors with distinction in distributed systems design and human-machine interaction ergonomics.
+                Rigorous grounding in digital electronics, computer systems architecture, embedded microprocessors, and software engineering.
               </p>
             </div>
           </div>
@@ -474,19 +479,19 @@ export const FutureActionSummitPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="p-5 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] flex flex-col justify-between">
               <div>
                 <Award className="w-7 h-7 text-emerald-400 mb-3" />
                 <h4 className="text-base font-bold text-white mb-1">
-                  Certified Sustainability & ESG Specialist
+                  Introduction to Project Management
                 </h4>
                 <div className="text-xs text-[#8e8e93]">
-                  Global ESG Council (CESG)
+                  The Knowledge Academy
                 </div>
               </div>
               <div className="mt-4 text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">
-                Issued 2023 • Verified
+                Issued Jul 2021 • Verified
               </div>
             </div>
 
@@ -494,14 +499,14 @@ export const FutureActionSummitPage: React.FC = () => {
               <div>
                 <ShieldCheck className="w-7 h-7 text-blue-400 mb-3" />
                 <h4 className="text-base font-bold text-white mb-1">
-                  Ethical AI & Algorithmic Governance Lead
+                  User Experience Fundamentals
                 </h4>
                 <div className="text-xs text-[#8e8e93]">
-                  IEEE Standards Association
+                  International Design Foundation
                 </div>
               </div>
               <div className="mt-4 text-[11px] font-semibold text-blue-400 uppercase tracking-wider">
-                Issued 2022 • Verified
+                Issued Dec 2020 • Verified
               </div>
             </div>
 
@@ -509,29 +514,14 @@ export const FutureActionSummitPage: React.FC = () => {
               <div>
                 <FileCheck className="w-7 h-7 text-indigo-400 mb-3" />
                 <h4 className="text-base font-bold text-white mb-1">
-                  Circular Design Practitioner
+                  Graphics Design
                 </h4>
                 <div className="text-xs text-[#8e8e93]">
-                  Ellen MacArthur Foundation Network
+                  Shaw Academy
                 </div>
               </div>
               <div className="mt-4 text-[11px] font-semibold text-indigo-400 uppercase tracking-wider">
-                Issued 2021 • Verified
-              </div>
-            </div>
-
-            <div className="p-5 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] flex flex-col justify-between">
-              <div>
-                <Sparkles className="w-7 h-7 text-amber-400 mb-3" />
-                <h4 className="text-base font-bold text-white mb-1">
-                  Executive Agile Change Agent
-                </h4>
-                <div className="text-xs text-[#8e8e93]">
-                  Scrum Alliance Global
-                </div>
-              </div>
-              <div className="mt-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider">
-                Issued 2020 • Verified
+                Issued Nov 2016 • Verified
               </div>
             </div>
           </div>
@@ -549,7 +539,7 @@ export const FutureActionSummitPage: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-[#8e8e93] max-w-sm">
-              Showcasing quantifiable technological deliverables addressing sustainability, resilience, and scale.
+              Showcasing quantifiable technological deliverables addressing systems architecture, resilience, and scale.
             </p>
           </div>
 
@@ -559,29 +549,29 @@ export const FutureActionSummitPage: React.FC = () => {
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
                   src={cardWebsite}
-                  alt="Gaia Carbon-Aware Cloud Experience"
+                  alt="Mobirevo Enterprise Solutions Suite"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
-                  38% Emissions Drop
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                  Enterprise Grade
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Climate Tech Platform
+                    Systems Architecture & Dev
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Gaia Carbon-Aware Cloud Experience
+                    Mobirevo Enterprise Solutions Suite
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Real-time visual dashboard scheduling dynamic computation when regional electrical grids run on peak renewable energy.
+                    High-performance bespoke web, mobile, and workflow automation systems built for business scalability across Africa and international partners.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Green UX</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Telemetry APIs</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Cloud Optimization</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Systems Analysis</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Technical PM</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Enterprise Architecture</span>
                 </div>
               </div>
             </div>
@@ -591,29 +581,29 @@ export const FutureActionSummitPage: React.FC = () => {
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
                   src={cardApp}
-                  alt="EquiHealth Oceania Mobile Architecture"
+                  alt="Ravex Fintech Platform Architecture"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
-                  Zero Latency Offline
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                  High Reliability
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Humanitarian Healthcare
+                    Fintech & Digital Infrastructure
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    EquiHealth Oceania Mobile Portal
+                    Ravex Architecture & Platforms
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Ultra-lightweight progressive web application built for remote regional communities and island networks facing irregular connectivity.
+                    Scalable, secure technology infrastructure and transaction architectures delivering high-reliability services for growing commercial enterprises.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Offline-First</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">WCAG AAA</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">IndexedDB</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Fintech Infrastructure</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Security</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Scalable Cloud</span>
                 </div>
               </div>
             </div>
@@ -623,29 +613,29 @@ export const FutureActionSummitPage: React.FC = () => {
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
                   src={cardLanding}
-                  alt="ResilienceNet Climate Alert Engine"
+                  alt="Otto & Partners Cross-Border Operations"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
-                  Multi-Channel Push
+                  East Africa Delivery
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Disaster Preparedness
+                    Digital Operations & Consulting
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    ResilienceNet Crisis Alert Engine
+                    Otto & Partners Cross-Border Platform
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Public emergency warning system supporting multi-lingual alerts across SMS, WebSockets, and broadcast frequencies.
+                    Regional technical project pipeline delivering digital consulting, product management, and systems integration across East Africa.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Public Safety</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Real-Time Streaming</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Fault Tolerant</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Technical PM</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Cross-Border Ops</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Exit Success</span>
                 </div>
               </div>
             </div>
@@ -771,6 +761,12 @@ export const FutureActionSummitPage: React.FC = () => {
             </form>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-[#8e8e93]">
+              <a
+                href="mailto:eikechukwu39@gmail.com"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/20 transition-colors"
+              >
+                <span>eikechukwu39@gmail.com</span>
+              </a>
               <a
                 href="https://www.linkedin.com/in/eikechukwu39/"
                 target="_blank"

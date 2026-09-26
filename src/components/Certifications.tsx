@@ -10,28 +10,22 @@ interface CertificationItem {
 export const Certifications: React.FC = () => {
   const certificationsList: CertificationItem[] = [
     {
-      period: '2021',
-      issuer: 'Nielsen Norman Group',
-      location: 'San Francisco, CA',
-      credential: 'UX Master Certified (NN/g UXMC)',
+      period: 'Verified Credential',
+      issuer: 'Project Management Professional Learning',
+      location: 'Online / Professional',
+      credential: 'Introduction to Project Management',
     },
     {
-      period: '2020',
-      issuer: 'Google',
-      location: 'Mountain View, CA',
-      credential: 'Professional UX Design Certificate',
+      period: 'Verified Credential',
+      issuer: 'UX / Interaction Design Institute',
+      location: 'Online / Professional',
+      credential: 'User Experience Fundamentals',
     },
     {
-      period: '2019',
-      issuer: 'Interaction Design Foundation',
-      location: 'Remote',
-      credential: 'Design Thinking & Human-Centered Systems',
-    },
-    {
-      period: '2018',
-      issuer: 'IDEO U',
-      location: 'Remote',
-      credential: 'Foundations in Design Strategy & Innovation',
+      period: 'Verified Credential',
+      issuer: 'Design Academy',
+      location: 'Professional Education',
+      credential: 'Graphics Design',
     },
   ];
 

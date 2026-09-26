@@ -10,28 +10,16 @@ interface EducationItem {
 export const Education: React.FC = () => {
   const educationList: EducationItem[] = [
     {
-      period: '2013 - 2015',
-      institution: 'Royal College of Art',
-      location: 'London, UK',
-      degree: 'Master of Arts in Interaction Design',
+      period: 'Jul 2024 - Sep 2025',
+      institution: 'Quantic School of Business and Technology',
+      location: 'Washington, D.C. (Global)',
+      degree: 'Master of Business Administration - MBA, Business Administration and Management',
     },
     {
-      period: '2010 - 2013',
-      institution: 'University of the Arts London',
-      location: 'London, UK',
-      degree: 'BA (Hons) Graphic & Media Design',
-    },
-    {
-      period: '2008 - 2010',
-      institution: 'Design & Tech Academy',
-      location: 'London, UK',
-      degree: 'Diploma in Digital Media & UI/UX',
-    },
-    {
-      period: '2016',
-      institution: 'Interaction Design Foundation',
-      location: 'Remote',
-      degree: 'Certified UX Master Practitioner',
+      period: 'Graduate',
+      institution: 'University of Port Harcourt',
+      location: 'Port Harcourt, Rivers State, Nigeria',
+      degree: 'Bachelor of Engineering - BE, Electronics and Computer Engineering',
     },
   ];
 

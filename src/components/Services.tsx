@@ -1,5 +1,4 @@
-import React from 'react';
-import { PencilRuler, Lightbulb, DraftingCompass, Rocket } from 'lucide-react';
+import { Cpu, Kanban, Layout, Rocket } from 'lucide-react';
 import clientLogosImg from '../assets/client_logos_hd.png';
 
 interface ServiceItem {
@@ -11,23 +10,23 @@ interface ServiceItem {
 export const Services: React.FC = () => {
   const services: ServiceItem[] = [
     {
-      title: 'User Interface Design',
-      description: 'The will snow derisively with likely and time lack good late claim salesman.',
-      icon: <PencilRuler className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
+      title: 'Systems Analysis & Architecture',
+      description: 'Analyzing business processes, developing technical specifications, designing scalable architectures, and enforcing quality assurance.',
+      icon: <Cpu className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
     },
     {
-      title: 'User Experience Design',
-      description: 'The will snow derisively with likely and time lack good late claim salesman.',
-      icon: <Lightbulb className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
+      title: 'Technical Project Management',
+      description: 'End-to-end Agile leadership, sprint planning, risk management, cross-functional coordination, and on-time software releases.',
+      icon: <Kanban className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
     },
     {
-      title: 'Brand Identity Design',
-      description: 'The will snow derisively with likely and time lack good late claim salesman.',
-      icon: <DraftingCompass className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
+      title: 'User Experience & Product Strategy',
+      description: 'Translating user research into high-fidelity interaction flows, clickable prototypes, and conversion-optimized digital experiences.',
+      icon: <Layout className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
     },
     {
-      title: 'Mobile App UI Design',
-      description: 'The will snow derisively with likely and time lack good late claim salesman.',
+      title: 'Bespoke Enterprise Software',
+      description: 'Architecting custom web and mobile solutions, SaaS platforms, fintech infrastructure, and business intelligence systems.',
       icon: <Rocket className="w-9 h-9 sm:w-10 sm:h-10 text-[#3b82f6]" strokeWidth={1.8} />,
     },
   ];
