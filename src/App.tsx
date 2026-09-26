@@ -25,7 +25,15 @@ export const App: React.FC = () => {
       const hash = window.location.hash.toLowerCase();
 
       if (path.includes('future-action-summit') || hash.includes('future-action-summit')) {
-        setCurrentRoute('future-action-summit');
+        window.history.replaceState(null, '', '/impact');
+        setCurrentRoute('impact');
+        setSelectedPost(null);
+        document.title = 'Ikechukwu Emmanuel Akwue — Future Action Summit Australia Delegate';
+        return;
+      }
+
+      if (path.includes('impact') || hash.includes('impact')) {
+        setCurrentRoute('impact');
         setSelectedPost(null);
         document.title = 'Ikechukwu Emmanuel Akwue — Future Action Summit Australia Delegate';
         return;
@@ -74,8 +82,8 @@ export const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Render Future Action Summit Route
-  if (currentRoute === 'future-action-summit') {
+  // Render Impact / Future Action Summit Route
+  if (currentRoute === 'impact' || currentRoute === 'future-action-summit') {
     return <FutureActionSummitPage />;
   }
 
