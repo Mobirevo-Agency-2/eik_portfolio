@@ -15,24 +15,24 @@ export const Testimonials: React.FC = () => {
   const testimonials: TestimonialItem[] = [
     {
       name: 'Fleece Marigold',
-      role: 'Web Designer',
+      role: 'Product Director',
       avatar: avatarFleece,
       quote:
-        'As a fellow designer, I was blown away by the precision and creativity demonstrated in Ayush work. His ability to transform concepts into stunning digital experiences is truly remarkable. Collaborating him was not only seamless but also inspiring. I highly recommend Ayush to anyone seeking a webflow developer who can turn dreams into reality.',
+        'As a technology partner, I was blown away by the precision and leadership demonstrated in Ikechukwu’s work at Mobirevo. His ability to transform complex requirements into scalable digital architectures is truly remarkable. Collaborating with him was seamless and inspiring.',
     },
     {
       name: 'Atika Jahin',
-      role: 'Developer, Payoneer',
+      role: 'Engineering Lead, Fintech Systems',
       avatar: avatarAtika,
       quote:
-        'Collaborating with Cameron was an extraordinary experience. His ability to craft intuitive user flows, combined with flawless visual design execution, made our product launch an enormous success.',
+        'Collaborating with Ikechukwu was an extraordinary experience. His ability to oversee full technical execution while maintaining rigorous architecture and agile delivery made our platform launch an enormous success.',
     },
     {
       name: 'Jane Cooper',
-      role: 'UX Designer, Paypal',
+      role: 'Enterprise Systems Director',
       avatar: avatarJane,
       quote:
-        'Cameron brings both artistic vision and deep engineering empathy to every digital product. An exceptional UX/UI designer who transforms complex platforms into seamless user experiences.',
+        'Ikechukwu brings both strategic executive vision and deep technical empathy to every software product. An exceptional leader who transforms complex systems into seamless, reliable realities.',
     },
   ];
 

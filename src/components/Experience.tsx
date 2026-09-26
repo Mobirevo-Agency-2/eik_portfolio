@@ -10,28 +10,28 @@ interface ExperienceItem {
 export const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
-      period: 'Jun 2019 - Running',
-      company: 'Twinkle Creative',
-      location: 'Sylhet, Bangladesh',
-      role: 'Product Designer',
+      period: '2016 - Present',
+      company: 'Mobirevo',
+      location: 'Port Harcourt, NG & USA',
+      role: 'Founder & Managing Director',
     },
     {
-      period: 'Dec 2017 - Aug 2018',
-      company: 'Creative Talent',
-      location: 'CA, USA',
-      role: 'UX/UI Designer',
+      period: '2020 - Present',
+      company: 'Enterprise Solutions Group',
+      location: 'Remote / Global',
+      role: 'Technical Project Manager & System Analyst',
     },
     {
-      period: 'Sep 2016 - Jan 2017',
-      company: 'Lolipop Studio',
-      location: 'Mumbai, India',
-      role: 'UX Designer',
+      period: '2018 - 2020',
+      company: 'Digital Innovation Labs',
+      location: 'Regional Hub',
+      role: 'Lead Systems Architect & Product Strategist',
     },
     {
-      period: 'Aug 2015 - Nov 2016',
-      company: 'Fast Streaming',
-      location: 'London, UK',
-      role: 'Product Designer',
+      period: '2014 - 2016',
+      company: 'Tech Solutions Consult',
+      location: 'Lagos & Regional, NG',
+      role: 'Senior Software Consultant & Technical Analyst',
     },
   ];
 

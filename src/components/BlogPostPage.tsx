@@ -63,15 +63,15 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onSele
           <div className="flex items-center gap-4">
             <img
               src={cameronAvatar}
-              alt="Cameron Williamson"
-              className="w-12 h-12 rounded-full object-cover ring-2 ring-blue-500/30"
+              alt="Ikechukwu Emmanuel Akwue"
+              className="w-12 h-12 rounded-full object-cover grayscale contrast-125 ring-2 ring-blue-500/30"
             />
             <div>
               <div className="text-base font-semibold text-white">
-                Cameron Williamson
+                Ikechukwu Emmanuel Akwue
               </div>
               <div className="text-sm text-[#8e8e93]">
-                Senior UX/UI Designer
+                Founder & Technical Leader
               </div>
             </div>
           </div>

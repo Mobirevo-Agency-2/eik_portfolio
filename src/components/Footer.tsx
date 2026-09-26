@@ -46,12 +46,14 @@ export const Footer: React.FC = () => {
 
       {/* Sub-footer / Copyright */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 text-sm sm:text-base text-[#737373] border-t border-white/[0.06]">
-        <span>©cameron willamson</span>
+        <span>© Ikechukwu Emmanuel Akwue</span>
         <a
-          href="mailto:contact@cameron.com"
+          href="https://www.linkedin.com/in/eikechukwu39/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-white transition-colors"
         >
-          contact@cameron.com
+          LinkedIn Profile
         </a>
       </div>
     </footer>

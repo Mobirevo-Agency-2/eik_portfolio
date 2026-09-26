@@ -27,14 +27,14 @@ export const App: React.FC = () => {
       if (path.includes('future-action-summit') || hash.includes('future-action-summit')) {
         setCurrentRoute('future-action-summit');
         setSelectedPost(null);
-        document.title = 'Cameron Williamson — Future Action Summit Australia Delegate';
+        document.title = 'Ikechukwu Emmanuel Akwue — Future Action Summit Australia Delegate';
         return;
       }
 
       if (path.includes('heavy-equipment-operator') || hash.includes('heavy-equipment-operator')) {
         setCurrentRoute('heavy-equipment');
         setSelectedPost(null);
-        document.title = 'Cameron Williamson — Heavy Equipment Operator';
+        document.title = 'Ikechukwu Emmanuel Akwue — Heavy Equipment Operator';
         return;
       }
 
@@ -44,14 +44,14 @@ export const App: React.FC = () => {
         if (found) {
           setSelectedPost(found);
           setCurrentRoute('home');
-          document.title = `${found.title} — Cameron Williamson`;
+          document.title = `${found.title} — Ikechukwu Emmanuel Akwue`;
           return;
         }
       }
 
       setCurrentRoute('home');
       setSelectedPost(null);
-      document.title = 'Cameron Williamson — Senior UX/UI Designer';
+      document.title = 'Ikechukwu Emmanuel Akwue — Technology Leader & Product Strategist';
     };
 
     syncRoute();

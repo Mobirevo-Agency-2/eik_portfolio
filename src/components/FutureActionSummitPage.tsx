@@ -10,7 +10,6 @@ import {
   FileCheck,
   Compass,
   CheckCircle2,
-  Mail,
   MapPin,
 } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
@@ -31,21 +30,21 @@ export const FutureActionSummitPage: React.FC = () => {
       role: 'Director of Global Policy, Future Horizons Network',
       avatar: avatarFleece,
       quote:
-        'Cameron’s perspective on ethical digital systems and sustainable innovation is exactly what Australia’s Future Action Summit champions. His presence as an international delegate will elevate our panels on tech-led climate resilience and scalable public infrastructure.',
+        'Ikechukwu’s perspective on ethical digital systems and sustainable innovation is exactly what Australia’s Future Action Summit champions. His presence as an international delegate will elevate our panels on tech-led climate resilience and scalable public infrastructure.',
     },
     {
       name: 'Sarah Chen',
       role: 'Chief Innovation Officer, Pacific Impact Council',
       avatar: avatarAtika,
       quote:
-        'Cameron represents the next generation of global changemakers—combining rigorous human-centered design with deep ecological and societal awareness. I wholeheartedly endorse his participation in the Future Action Summit.',
+        'Ikechukwu represents the next generation of global changemakers—combining rigorous systems design with deep ecological and societal awareness. I wholeheartedly endorse his participation in the Future Action Summit.',
     },
     {
       name: 'Marcus Vance',
       role: 'Chairperson, Ethical Technology Roundtable',
       avatar: avatarJane,
       quote:
-        'A rare leader who turns complex sustainability targets into actionable, human-centered software architectures. Cameron will be an indispensable contributor to the summit’s working groups and policy deliberations.',
+        'A rare leader who turns complex sustainability targets into actionable, human-centered software architectures. Ikechukwu will be an indispensable contributor to the summit’s working groups and policy deliberations.',
     },
   ];
 
@@ -86,10 +85,10 @@ export const FutureActionSummitPage: React.FC = () => {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-white leading-[1.12] mb-6">
-                Hi, I’m Cameron Williamson.
+                Hi, I’m Ikechukwu Emmanuel Akwue.
               </h1>
               <p className="text-xl sm:text-2xl text-[#9a9a9f] font-normal leading-relaxed mb-8">
-                Design Strategist, Technologist &{' '}
+                Founder, Technologist &{' '}
                 <span className="text-[#3b82f6] font-semibold">
                   Sustainable Innovation Leader
                 </span>{' '}
@@ -107,11 +106,13 @@ export const FutureActionSummitPage: React.FC = () => {
                 </a>
 
                 <a
-                  href="mailto:contact@cameron.com?subject=Future%20Action%20Summit%20Australia%20-%20Official%20Delegate%20Invitation"
+                  href="https://www.linkedin.com/in/eikechukwu39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#202020] hover:bg-[#282828] border border-white/10 active:scale-95 text-white font-medium rounded-2xl transition-all text-sm sm:text-base"
                 >
-                  <Mail className="w-4 h-4 text-blue-400" />
-                  <span>Request Official Invitation</span>
+                  <LinkedInIcon className="w-4 h-4 text-blue-400" />
+                  <span>Verify on LinkedIn</span>
                 </a>
               </div>
             </div>
@@ -122,7 +123,7 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="w-44 h-44 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-3xl overflow-hidden border border-white/10 bg-[#1e1e1e] shadow-2xl p-1.5 relative z-10">
                   <img
                     src={cameronAvatar}
-                    alt="Cameron Williamson"
+                    alt="Ikechukwu Emmanuel Akwue"
                     className="w-full h-full object-cover rounded-2xl grayscale contrast-125 transition-all duration-300"
                   />
                 </div>
@@ -266,26 +267,28 @@ export const FutureActionSummitPage: React.FC = () => {
                   <div className="w-12 h-12 rounded-full overflow-hidden border border-white/20">
                     <img
                       src={cameronAvatar}
-                      alt="Cameron Williamson"
+                      alt="Ikechukwu Emmanuel Akwue"
                       className="w-full h-full object-cover grayscale contrast-125"
                     />
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-white">
-                      Cameron Williamson
+                      Ikechukwu Emmanuel Akwue
                     </div>
                     <div className="text-xs text-[#8e8e93]">
-                      Design Strategist & Technology Leader
+                      Founder & Managing Director, Mobirevo • Technology Leader
                     </div>
                   </div>
                 </div>
 
                 <a
-                  href="mailto:contact@cameron.com?subject=Future%20Action%20Summit%20Australia%20-%20Official%20Invitation"
+                  href="https://www.linkedin.com/in/eikechukwu39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2"
                 >
-                  <Mail className="w-4 h-4" />
-                  <span>Issue Official Summit Invitation</span>
+                  <LinkedInIcon className="w-4 h-4 text-white" />
+                  <span>Connect on LinkedIn</span>
                 </a>
               </div>
             </div>
@@ -769,7 +772,7 @@ export const FutureActionSummitPage: React.FC = () => {
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-[#8e8e93]">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/eikechukwu39/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#202020] hover:bg-[#282828] text-white transition-colors"
@@ -777,26 +780,20 @@ export const FutureActionSummitPage: React.FC = () => {
                 <LinkedInIcon className="w-4 h-4 text-blue-400" />
                 <span>Verify on LinkedIn</span>
               </a>
-
-              <a
-                href="mailto:contact@cameron.com?subject=Future%20Action%20Summit%20Australia%20-%20Official%20Invitation"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#202020] hover:bg-[#282828] text-white transition-colors"
-              >
-                <Mail className="w-4 h-4 text-blue-400" />
-                <span>contact@cameron.com</span>
-              </a>
             </div>
           </div>
 
           {/* Sub-footer Copyright */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 text-sm sm:text-base text-[#737373] border-t border-white/[0.06]">
-            <span>© 2026 Cameron Williamson • Future Action Summit Australia Delegate Candidate</span>
+            <span>© 2026 Ikechukwu Emmanuel Akwue • Future Action Summit Australia Delegate Candidate</span>
             <div className="flex items-center gap-4">
               <a
-                href="mailto:contact@cameron.com"
+                href="https://www.linkedin.com/in/eikechukwu39/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                contact@cameron.com
+                linkedin.com/in/eikechukwu39
               </a>
             </div>
           </div>

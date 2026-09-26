@@ -25,21 +25,21 @@ export const HeavyEquipmentPage: React.FC = () => {
       role: 'Project Superintendent',
       avatar: avatarFleece,
       quote:
-        'As a fellow logistics lead, I was blown away by the precision and safety demonstrated in Cameron work. His ability to maneuver Class A heavy haul trucks, operate multi-ton mobile cranes, and manage busy forklift yards is truly remarkable. Collaborating with him was not only seamless but also inspiring. I highly recommend Cameron to any freight or construction enterprise.',
+        'As a fellow logistics lead, I was blown away by the precision and safety demonstrated in Ikechukwu’s work. His ability to maneuver Class A heavy haul trucks, operate multi-ton mobile cranes, and manage busy forklift yards is truly remarkable. Collaborating with him was not only seamless but also inspiring. I highly recommend Ikechukwu to any freight or construction enterprise.',
     },
     {
       name: 'Atika Jahin',
       role: 'Fleet Logistics Director',
       avatar: avatarAtika,
       quote:
-        'Cameron operated our 80-ton mobile cranes and heavy haul fleet across complex urban project corridors. Zero incidents, immaculate logbooks, and surgical precision on high-tonnage blind lifts.',
+        'Ikechukwu operated our 80-ton mobile cranes and heavy haul fleet across complex urban project corridors. Zero incidents, immaculate logbooks, and surgical precision on high-tonnage blind lifts.',
     },
     {
       name: 'Jane Cooper',
       role: 'Site Safety Inspector',
       avatar: avatarJane,
       quote:
-        'From daily pre-trip walkarounds to OSHA-standard forklift rigging, Cameron sets the benchmark for safe machinery handling and team coordination across every terminal.',
+        'From daily pre-trip walkarounds to OSHA-standard forklift rigging, Ikechukwu sets the benchmark for safe machinery handling and team coordination across every terminal.',
     },
   ];
 
@@ -62,7 +62,7 @@ export const HeavyEquipmentPage: React.FC = () => {
           <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 lg:gap-16 mb-16">
             <div className="max-w-2xl">
               <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-bold tracking-tight text-white leading-[1.12] mb-6">
-                Hi, I’m Cameron Williamson.
+                Hi, I’m Ikechukwu Emmanuel Akwue.
               </h1>
               <p className="text-xl sm:text-2xl text-[#9a9a9f] font-normal leading-relaxed mb-8">
                 And a{' '}
@@ -75,7 +75,7 @@ export const HeavyEquipmentPage: React.FC = () => {
               {/* Social links */}
               <div className="flex items-center gap-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/eikechukwu39/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -109,7 +109,7 @@ export const HeavyEquipmentPage: React.FC = () => {
               <div className="w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] lg:w-[220px] lg:h-[220px] rounded-full overflow-hidden bg-[#181818] ring-1 ring-white/10 shadow-2xl">
                 <img
                   src={cameronAvatar}
-                  alt="Cameron Williamson"
+                  alt="Ikechukwu Emmanuel Akwue"
                   className="w-full h-full object-cover grayscale contrast-125"
                 />
               </div>
