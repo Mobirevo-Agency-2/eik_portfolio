@@ -11,6 +11,7 @@ import { LatestPosts } from './components/LatestPosts';
 import { Footer } from './components/Footer';
 import { BlogPostPage } from './components/BlogPostPage';
 import { HeavyEquipmentPage } from './components/HeavyEquipmentPage';
+import { FutureActionSummitPage } from './components/FutureActionSummitPage';
 import { BlogPost, BLOG_POSTS } from './data/posts';
 import { ArrowRight } from 'lucide-react';
 
@@ -24,9 +25,17 @@ export const App: React.FC = () => {
       const path = window.location.pathname.toLowerCase();
       const hash = window.location.hash.toLowerCase();
 
+      if (path.includes('future-action-summit') || hash.includes('future-action-summit')) {
+        setCurrentRoute('future-action-summit');
+        setSelectedPost(null);
+        document.title = 'Cameron Williamson — Future Action Summit Australia Delegate';
+        return;
+      }
+
       if (path.includes('heavy-equipment-operator') || hash.includes('heavy-equipment-operator')) {
         setCurrentRoute('heavy-equipment');
         setSelectedPost(null);
+        document.title = 'Cameron Williamson — Heavy Equipment Operator';
         return;
       }
 
@@ -36,12 +45,14 @@ export const App: React.FC = () => {
         if (found) {
           setSelectedPost(found);
           setCurrentRoute('home');
+          document.title = `${found.title} — Cameron Williamson`;
           return;
         }
       }
 
       setCurrentRoute('home');
       setSelectedPost(null);
+      document.title = 'Cameron Williamson — Senior UX/UI Designer';
     };
 
     syncRoute();
@@ -56,13 +67,23 @@ export const App: React.FC = () => {
   const navigateToHeavyEquipment = () => {
     setCurrentRoute('heavy-equipment');
     setSelectedPost(null);
+    document.title = 'Cameron Williamson — Heavy Equipment Operator';
     window.history.pushState({}, '', '/heavy-equipment-operator');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigateToFutureActionSummit = () => {
+    setCurrentRoute('future-action-summit');
+    setSelectedPost(null);
+    document.title = 'Cameron Williamson — Future Action Summit Australia Delegate';
+    window.history.pushState({}, '', '/future-action-summit');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const navigateToHome = () => {
     setCurrentRoute('home');
     setSelectedPost(null);
+    document.title = 'Cameron Williamson — Senior UX/UI Designer';
     window.history.pushState({}, '', '/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -78,9 +99,24 @@ export const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Render Future Action Summit Route
+  if (currentRoute === 'future-action-summit') {
+    return (
+      <FutureActionSummitPage
+        onNavigateHome={navigateToHome}
+        onNavigateHeavyEquipment={navigateToHeavyEquipment}
+      />
+    );
+  }
+
   // Render Heavy Equipment Operator Route
   if (currentRoute === 'heavy-equipment') {
-    return <HeavyEquipmentPage onNavigateHome={navigateToHome} />;
+    return (
+      <HeavyEquipmentPage
+        onNavigateHome={navigateToHome}
+        onNavigateFutureActionSummit={navigateToFutureActionSummit}
+      />
+    );
   }
 
   // Render Blog Post Page
@@ -106,13 +142,25 @@ export const App: React.FC = () => {
               Route: <span className="text-white">/</span> (UX/UI Designer)
             </span>
           </div>
-          <button
-            onClick={navigateToHeavyEquipment}
-            className="text-xs sm:text-sm font-medium text-[#3b82f6] hover:text-blue-400 transition-colors flex items-center gap-1.5 group"
-          >
-            <span>Switch to /heavy-equipment-operator</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-          </button>
+
+          <div className="flex items-center gap-3 sm:gap-5">
+            <button
+              onClick={navigateToFutureActionSummit}
+              className="text-xs sm:text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1 group"
+            >
+              <span>/future-action-summit 🇦🇺</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </button>
+
+            <button
+              onClick={navigateToHeavyEquipment}
+              className="text-xs sm:text-sm font-medium text-[#3b82f6] hover:text-blue-400 transition-colors flex items-center gap-1 group"
+            >
+              <span className="hidden sm:inline">/heavy-equipment-operator</span>
+              <span className="sm:hidden">/heavy-equip</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </button>
+          </div>
         </div>
       </div>
 
