@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail } from 'lucide-react';
 import { LinkedInIcon, InstagramIcon, TikTokIcon } from './Icons';
 import cameronAvatar from '../assets/cameron_hd.png';
 
@@ -15,8 +16,16 @@ export const Hero: React.FC = () => {
             Faith-driven Entrepreneur, 3x Founder & <span className="text-[#3b82f6] font-semibold">Quantic MBA</span> | Member ForbesBLK | Technical Project Manager & Founder building bespoke software solutions for business growth.
           </p>
           
-          {/* Social links: LinkedIn, Instagram, TikTok (Identical size & optical balance) */}
-          <div className="flex items-center gap-3">
+          {/* Social links & Email */}
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="mailto:ogaonyi@yahoo.com"
+              aria-label="Email ogaonyi@yahoo.com"
+              className="px-3.5 h-9 rounded-lg flex items-center gap-2 text-xs font-semibold text-white bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/20 hover:border-blue-500/40 text-blue-400 transition-all"
+            >
+              <Mail className="w-3.5 h-3.5" />
+              <span>ogaonyi@yahoo.com</span>
+            </a>
             <a
               href="https://www.linkedin.com/in/eikechukwu39/"
               target="_blank"

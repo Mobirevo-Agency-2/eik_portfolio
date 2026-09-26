@@ -762,10 +762,10 @@ export const FutureActionSummitPage: React.FC = () => {
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-[#8e8e93]">
               <a
-                href="mailto:eikechukwu39@gmail.com"
+                href="mailto:ogaonyi@yahoo.com"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/20 transition-colors"
               >
-                <span>eikechukwu39@gmail.com</span>
+                <span>ogaonyi@yahoo.com</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/eikechukwu39/"

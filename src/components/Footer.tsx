@@ -42,19 +42,36 @@ export const Footer: React.FC = () => {
             </button>
           </div>
         </form>
+        <div className="mt-4 text-sm text-[#8e8e93]">
+          Direct Email:{' '}
+          <a
+            href="mailto:ogaonyi@yahoo.com"
+            className="text-[#3b82f6] hover:underline font-medium"
+          >
+            ogaonyi@yahoo.com
+          </a>
+        </div>
       </div>
 
       {/* Sub-footer / Copyright */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 text-sm sm:text-base text-[#737373] border-t border-white/[0.06]">
         <span>© Ikechukwu Emmanuel Akwue</span>
-        <a
-          href="https://www.linkedin.com/in/eikechukwu39/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition-colors"
-        >
-          LinkedIn Profile
-        </a>
+        <div className="flex items-center gap-6">
+          <a
+            href="mailto:ogaonyi@yahoo.com"
+            className="hover:text-white transition-colors"
+          >
+            ogaonyi@yahoo.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eikechukwu39/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            LinkedIn Profile
+          </a>
+        </div>
       </div>
     </footer>
   );
