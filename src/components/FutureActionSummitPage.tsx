@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   ShieldCheck,
-  ArrowLeft,
   ArrowRight,
   Globe,
   Leaf,
@@ -24,15 +23,7 @@ import avatarFleece from '../assets/avatar_fleece_hd.png';
 import avatarAtika from '../assets/avatar_atika.png';
 import avatarJane from '../assets/avatar_jane.png';
 
-interface FutureActionSummitPageProps {
-  onNavigateHome?: () => void;
-  onNavigateHeavyEquipment?: () => void;
-}
-
-export const FutureActionSummitPage: React.FC<FutureActionSummitPageProps> = ({
-  onNavigateHome,
-  onNavigateHeavyEquipment,
-}) => {
+export const FutureActionSummitPage: React.FC = () => {
   // Testimonials Carousel state
   const endorsements = [
     {
@@ -83,42 +74,6 @@ export const FutureActionSummitPage: React.FC<FutureActionSummitPageProps> = ({
 
   return (
     <div className="min-h-screen bg-[#181818] text-white selection:bg-blue-600 selection:text-white">
-      {/* Route Switcher / Sticky Header Badge */}
-      <div className="border-b border-white/[0.06] bg-[#141414]/90 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#8e8e93] flex items-center gap-2">
-              Route: <span className="text-white">/future-action-summit</span>
-              <span className="hidden md:inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                Official Delegate Dossier 🇦🇺
-              </span>
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4">
-            {onNavigateHome && (
-              <button
-                onClick={onNavigateHome}
-                className="text-xs sm:text-sm font-medium text-[#8e8e93] hover:text-white transition-colors flex items-center gap-1"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Portfolio</span>
-              </button>
-            )}
-            {onNavigateHeavyEquipment && (
-              <button
-                onClick={onNavigateHeavyEquipment}
-                className="text-xs sm:text-sm font-medium text-[#3b82f6] hover:text-blue-400 transition-colors flex items-center gap-1"
-              >
-                <span>/heavy-equipment</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
-
       <main className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 py-8">
         {/* 1. HERO SECTION */}
         <section className="pt-10 sm:pt-16 pb-16 sm:pb-20">

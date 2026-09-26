@@ -17,15 +17,7 @@ import avatarFleece from '../assets/avatar_fleece_hd.png';
 import avatarAtika from '../assets/avatar_atika.png';
 import avatarJane from '../assets/avatar_jane.png';
 
-interface HeavyEquipmentPageProps {
-  onNavigateHome?: () => void;
-  onNavigateFutureActionSummit?: () => void;
-}
-
-export const HeavyEquipmentPage: React.FC<HeavyEquipmentPageProps> = ({
-  onNavigateHome,
-  onNavigateFutureActionSummit,
-}) => {
+export const HeavyEquipmentPage: React.FC = () => {
   // Testimonials Carousel state
   const testimonials = [
     {
@@ -64,38 +56,6 @@ export const HeavyEquipmentPage: React.FC<HeavyEquipmentPageProps> = ({
 
   return (
     <div className="min-h-screen bg-[#181818] text-white selection:bg-blue-600 selection:text-white">
-      {/* Route Switcher / Header Badge */}
-      <div className="border-b border-white/[0.06] bg-[#141414]/90 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#3b82f6] animate-pulse"></span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#8e8e93]">
-              Route: <span className="text-white">/heavy-equipment-operator</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-4">
-            {onNavigateHome && (
-              <button
-                onClick={onNavigateHome}
-                className="text-xs sm:text-sm font-medium text-[#8e8e93] hover:text-white transition-colors flex items-center gap-1.5"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Portfolio</span>
-              </button>
-            )}
-            {onNavigateFutureActionSummit && (
-              <button
-                onClick={onNavigateFutureActionSummit}
-                className="text-xs sm:text-sm font-medium text-[#3b82f6] hover:text-blue-400 transition-colors flex items-center gap-1.5"
-              >
-                <span>/future-action-summit</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
-
       <main className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 py-8">
         {/* 1. HERO SECTION */}
         <section className="pt-12 sm:pt-20 pb-16 sm:pb-24">

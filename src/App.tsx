@@ -13,7 +13,6 @@ import { BlogPostPage } from './components/BlogPostPage';
 import { HeavyEquipmentPage } from './components/HeavyEquipmentPage';
 import { FutureActionSummitPage } from './components/FutureActionSummitPage';
 import { BlogPost, BLOG_POSTS } from './data/posts';
-import { ArrowRight } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<string>('home');
@@ -64,30 +63,6 @@ export const App: React.FC = () => {
     };
   }, []);
 
-  const navigateToHeavyEquipment = () => {
-    setCurrentRoute('heavy-equipment');
-    setSelectedPost(null);
-    document.title = 'Cameron Williamson — Heavy Equipment Operator';
-    window.history.pushState({}, '', '/heavy-equipment-operator');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const navigateToFutureActionSummit = () => {
-    setCurrentRoute('future-action-summit');
-    setSelectedPost(null);
-    document.title = 'Cameron Williamson — Future Action Summit Australia Delegate';
-    window.history.pushState({}, '', '/future-action-summit');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const navigateToHome = () => {
-    setCurrentRoute('home');
-    setSelectedPost(null);
-    document.title = 'Cameron Williamson — Senior UX/UI Designer';
-    window.history.pushState({}, '', '/');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   const handleSelectPost = (post: BlogPost) => {
     setSelectedPost(post);
     window.location.hash = `#blog/${post.slug}`;
@@ -101,22 +76,12 @@ export const App: React.FC = () => {
 
   // Render Future Action Summit Route
   if (currentRoute === 'future-action-summit') {
-    return (
-      <FutureActionSummitPage
-        onNavigateHome={navigateToHome}
-        onNavigateHeavyEquipment={navigateToHeavyEquipment}
-      />
-    );
+    return <FutureActionSummitPage />;
   }
 
   // Render Heavy Equipment Operator Route
   if (currentRoute === 'heavy-equipment') {
-    return (
-      <HeavyEquipmentPage
-        onNavigateHome={navigateToHome}
-        onNavigateFutureActionSummit={navigateToFutureActionSummit}
-      />
-    );
+    return <HeavyEquipmentPage />;
   }
 
   // Render Blog Post Page
@@ -130,40 +95,9 @@ export const App: React.FC = () => {
     );
   }
 
-  // Render UX/UI Design Portfolio Route
+  // Render UX/UI Design Portfolio Route (Clean, standalone)
   return (
     <div className="min-h-screen bg-[#181818] text-white selection:bg-blue-600 selection:text-white">
-      {/* Route Switcher / Header Badge */}
-      <div className="border-b border-white/[0.06] bg-[#141414]/90 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#3b82f6]"></span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#8e8e93]">
-              Route: <span className="text-white">/</span> (UX/UI Designer)
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3 sm:gap-5">
-            <button
-              onClick={navigateToFutureActionSummit}
-              className="text-xs sm:text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1 group"
-            >
-              <span>/future-action-summit 🇦🇺</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </button>
-
-            <button
-              onClick={navigateToHeavyEquipment}
-              className="text-xs sm:text-sm font-medium text-[#3b82f6] hover:text-blue-400 transition-colors flex items-center gap-1 group"
-            >
-              <span className="hidden sm:inline">/heavy-equipment-operator</span>
-              <span className="sm:hidden">/heavy-equip</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </button>
-          </div>
-        </div>
-      </div>
-
       <main className="max-w-5xl lg:max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 py-8">
         <Hero />
         <Skills />
