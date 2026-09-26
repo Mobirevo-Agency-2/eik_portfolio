@@ -123,7 +123,7 @@ export const FutureActionSummitPage: React.FC = () => {
                   <img
                     src={cameronAvatar}
                     alt="Cameron Williamson"
-                    className="w-full h-full object-cover rounded-2xl grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover rounded-2xl grayscale contrast-125 transition-all duration-300"
                   />
                 </div>
                 {/* Glowing accent backdrop */}
@@ -267,7 +267,7 @@ export const FutureActionSummitPage: React.FC = () => {
                     <img
                       src={cameronAvatar}
                       alt="Cameron Williamson"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover grayscale contrast-125"
                     />
                   </div>
                   <div>
