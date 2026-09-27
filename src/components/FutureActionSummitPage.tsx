@@ -251,13 +251,22 @@ export const FutureActionSummitPage: React.FC = () => {
 
               <div className="space-y-4 text-base sm:text-lg text-[#a1a1a6] leading-relaxed">
                 <p>
-                  As a faith-driven entrepreneur, 3x founder (Mobirevo, Ravex, Otto & Partners), Quantic MBA, and ForbesBLK member building bespoke software solutions for African and global business growth, my participation at the Future Action Summit in Australia bridges emerging market digital architecture with global sustainability and technology governance.
+                  My professional journey has been driven by a belief that technology should not only make businesses more efficient, but also expand access to opportunities and address societal challenges. As a technology entrepreneur and product leader, I have spent the past several years building and advising ventures across software, fintech and education.
                 </p>
                 <p>
-                  Australia stands at the forefront of international climate transition leadership, regional technological resilience, and forward-looking digital policy. The Future Action Summit represents a vital convergence point where international leaders formulate actionable blueprints for an equitable, technology-enabled future.
+                  I am the Founder and Managing Director of Mobirevo Softwares & Technologies, where I lead teams developing digital products and technology infrastructure for businesses and organisations. I have also founded and worked on fintech ventures focused on digital financial services, payments and financial access, including Ravex Innovation Labs Limited (Ravex.app) and Monnee Inc., a Delaware-registered cross-border payment solution. Through this work, I have contributed to areas aligned with SDG 8 (Decent Work and Economic Growth) and SDG 9 (Industry, Innovation and Infrastructure) by building technology businesses, creating professional opportunities and developing digital and financial infrastructure that enables participation in the digital economy.
+                </p>
+                <p>
+                  Education has become another important part of my journey. I serve on the Advisory Board of ExamHall.net, an education technology initiative building digital infrastructure for students, examiners and educational institutions through examination management, assessment, grading and exam-preparation tools. This connects my work directly to SDG 4 (Quality Education) and has strengthened my interest in using technology to improve educational systems and access to learning and assessment. My fintech work also relates to SDG 10 (Reduced Inequalities) by seeking to expand access to digital financial services and reduce barriers to participation in the digital economy.
+                </p>
+                <p>
+                  My journey has taught me that technology alone does not create sustainable impact. Building solutions in an emerging-market environment has exposed me to challenges involving infrastructure, funding, affordability, adoption and scaling. I have learned that sustainable development requires not only innovation, but also an understanding of people, institutions, policy and the systems in which solutions operate.
+                </p>
+                <p>
+                  I want to attend the Future Action Summit because I want to deepen my understanding of how technology, policy, social innovation and international collaboration can translate the SDGs into practical and measurable impact. I hope to learn from other young leaders, exchange perspectives across cultures and disciplines, and develop partnerships that can extend beyond the Summit.
                 </p>
                 <p className="text-white font-medium">
-                  As an official delegate, my objective is twofold: first, to share our proven methodologies on systems analysis, technical project management, and scalable digital infrastructure; second, to collaborate with Australian researchers, policymakers, and civic innovators to synthesize cross-continental action plans.
+                  My long-term ambition is to build and support technology ventures that contribute to inclusive economic development, accessible education and stronger digital infrastructure in Africa and beyond. I hope to bring my experience as an entrepreneur and builder to the Summit while developing the knowledge, relationships and leadership capacity required to turn innovation into sustainable community impact.
                 </p>
               </div>
 
