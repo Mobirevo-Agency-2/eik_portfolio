@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   ShieldCheck,
-  ArrowRight,
   Globe,
   Leaf,
   Brain,
@@ -10,6 +9,7 @@ import {
   Compass,
   CheckCircle2,
   MapPin,
+  Mail,
 } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
 import cameronAvatar from '../assets/cameron_hd.png';
@@ -97,11 +97,11 @@ export const FutureActionSummitPage: React.FC = () => {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href="#statement-of-intent"
+                  href="mailto:ogaonyi@yahoo.com?subject=Future%20Action%20Summit%20Inquiry%20-%20Ikechukwu%20Emmanuel%20Akwue"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#2563eb] hover:bg-[#1d4ed8] active:scale-95 text-white font-semibold rounded-2xl transition-all shadow-lg shadow-blue-500/20 text-sm sm:text-base"
                 >
-                  <span>Review Delegate Dossier</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <Mail className="w-4 h-4" />
+                  <span>Contact Me via Email</span>
                 </a>
 
                 <a
