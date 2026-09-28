@@ -1,5 +1,5 @@
 import React from 'react';
-import mockupWebsite from '../assets/mockup_website_hd.png';
+import mockupWebsite from '../assets/mobirevo_project.png';
 import mockupApp from '../assets/mockup_app_hd.png';
 import mockupLanding from '../assets/mockup_landing_hd.png';
 

@@ -14,7 +14,7 @@ import {
 import { LinkedInIcon } from './Icons';
 import cameronAvatar from '../assets/cameron_hd.png';
 import clientLogosImg from '../assets/client_logos_hd.png';
-import cardWebsite from '../assets/mockup_website_hd.png';
+import mobirevoProjectImg from '../assets/mobirevo_project.png';
 import cardApp from '../assets/mockup_app_hd.png';
 import cardLanding from '../assets/mockup_landing_hd.png';
 import avatarFleece from '../assets/avatar_fleece_hd.png';
@@ -557,9 +557,9 @@ export const FutureActionSummitPage: React.FC = () => {
             <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
-                  src={cardWebsite}
+                  src={mobirevoProjectImg}
                   alt="Mobirevo - Software & Hardware Company"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
                   Nigeria & North America
