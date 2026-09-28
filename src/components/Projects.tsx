@@ -15,7 +15,7 @@ export const Projects: React.FC = () => {
       image: mockupWebsite,
     },
     {
-      title: 'Ravex Financial & Mobile Architecture',
+      title: 'Ravex: Digital Financial & Utility Payments Platform (Nigeria & West Africa)',
       image: mockupApp,
     },
     {

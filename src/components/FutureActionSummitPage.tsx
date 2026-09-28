@@ -361,7 +361,7 @@ export const FutureActionSummitPage: React.FC = () => {
                 Ravex • Lagos State, Nigeria
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Spearheading product vision, technical architecture, and strategic growth for scalable fintech and digital solutions. Driving operational execution and system integrity for mission-critical client solutions.
+                Spearheading product vision, technical architecture, and strategic growth for Ravex—a digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
               </p>
             </div>
 
@@ -606,29 +606,45 @@ export const FutureActionSummitPage: React.FC = () => {
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
                   src={cardApp}
-                  alt="Ravex Fintech Platform Architecture"
+                  alt="Ravex - Digital Financial & Utility Payments Platform"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
-                  High Reliability
+                  Nigeria & West Africa
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Fintech & Digital Infrastructure
+                  <div className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
+                    Digital Financial & Utility Platform
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Ravex Architecture & Platforms
+                    <a
+                      href="https://ravex.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5"
+                    >
+                      <span>Ravex (Ravex.app)</span>
+                      <span className="text-xs text-emerald-400">↗</span>
+                    </a>
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Scalable, secure technology infrastructure and transaction architectures delivering high-reliability services for growing commercial enterprises.
+                    A digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Fintech Infrastructure</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Security</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Scalable Cloud</span>
+                  <a
+                    href="https://ravex.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+                  >
+                    ravex.app ↗
+                  </a>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Digital Financial Services</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Utility Payments</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Digital Assets & Bills</span>
                 </div>
               </div>
             </div>
