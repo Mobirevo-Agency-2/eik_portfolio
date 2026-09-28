@@ -19,7 +19,7 @@ export const Education: React.FC = () => {
       period: 'Graduate',
       institution: 'University of Port Harcourt',
       location: 'Port Harcourt, Rivers State, Nigeria',
-      degree: 'Bachelor of Engineering - BE, Electronics and Computer Engineering',
+      degree: 'Bachelor of Engineering - BE, Electrical, Electronics and Communications Engineering',
     },
   ];
 

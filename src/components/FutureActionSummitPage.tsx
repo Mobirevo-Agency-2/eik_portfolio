@@ -440,7 +440,7 @@ export const FutureActionSummitPage: React.FC = () => {
               Education & Academic Foundation
             </h2>
             <p className="text-sm sm:text-base text-[#8e8e93] mt-2">
-              Advanced qualifications combining global business administration with computer and electronics engineering.
+              Advanced qualifications combining global business administration with electrical, electronics and communications engineering.
             </p>
           </div>
 
@@ -468,10 +468,10 @@ export const FutureActionSummitPage: React.FC = () => {
                 Bachelor of Engineering - BE
               </h3>
               <div className="text-sm text-[#8e8e93] mb-3">
-                University of Port Harcourt • Electronics and Computer Engineering
+                University of Port Harcourt • Electrical, Electronics and Communications Engineering
               </div>
               <p className="text-xs text-[#a1a1a6] leading-relaxed">
-                Rigorous grounding in digital electronics, computer systems architecture, embedded microprocessors, and software engineering.
+                Rigorous grounding in electrical systems, electronics, telecommunications, digital signal transmission, and computer systems architecture.
               </p>
             </div>
           </div>
