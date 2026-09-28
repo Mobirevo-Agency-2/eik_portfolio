@@ -77,7 +77,7 @@ export const Hero: React.FC = () => {
           I began my career as a Visual and Graphic Designer, transitioned to a Senior UX/UI Designer, and evolved into software development and project management. This diverse background gives me a robust understanding of programming languages, core software architecture design, and deep expertise in DevOps tools and Agile methodologies.
         </p>
         <p>
-          Currently, I am the Founder and Systems Analyst/Technical Project Manager at Mobirevo, a bespoke software development company. Here, I lead cross-functional teams delivering innovative digital products—including social media chat apps, SaaS applications, fintech platforms, business intelligence software, and blockchain solutions that foster growth and give our clients a distinct market advantage.
+          Currently, I am the Founder and Systems Analyst/Technical Project Manager at Mobirevo, a software and hardware company based in Nigeria with an active presence in North America (specifically the United States and Canada). Here, I lead cross-functional teams delivering innovative digital and hardware products—including web platforms, mobile apps, SaaS applications, fintech systems, and automated technology solutions that foster growth and give our clients a distinct market advantage.
         </p>
       </div>
     </section>

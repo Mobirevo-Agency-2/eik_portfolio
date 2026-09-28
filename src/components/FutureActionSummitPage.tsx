@@ -558,29 +558,45 @@ export const FutureActionSummitPage: React.FC = () => {
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
                   src={cardWebsite}
-                  alt="Mobirevo Enterprise Solutions Suite"
+                  alt="Mobirevo - Software & Hardware Company"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
-                  Enterprise Grade
+                  Nigeria & North America
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Systems Architecture & Dev
+                    Software & Hardware Company
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Mobirevo Enterprise Solutions Suite
+                    <a
+                      href="https://mobirevo.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5"
+                    >
+                      <span>Mobirevo</span>
+                      <span className="text-xs text-blue-400">↗</span>
+                    </a>
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    High-performance bespoke web, mobile, and workflow automation systems built for business scalability across Africa and international partners.
+                    A software and hardware company based in Nigeria with an active presence in North America (specifically Canada and the United States), building top-tier web, mobile, and hardware solutions.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Systems Analysis</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Technical PM</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Enterprise Architecture</span>
+                  <a
+                    href="https://mobirevo.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition-colors"
+                  >
+                    mobirevo.com ↗
+                  </a>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Web & Mobile Apps</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Hardware Solutions</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">US & Canada Presence</span>
                 </div>
               </div>
             </div>
