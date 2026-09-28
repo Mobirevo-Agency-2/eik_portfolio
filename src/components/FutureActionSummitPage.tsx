@@ -471,7 +471,7 @@ export const FutureActionSummitPage: React.FC = () => {
                 University of Port Harcourt • Electrical, Electronics and Communications Engineering
               </div>
               <p className="text-xs text-[#a1a1a6] leading-relaxed">
-                Rigorous grounding in electrical systems, electronics, telecommunications, digital signal transmission, and computer systems architecture.
+                Rigorous grounding in electrical systems, electronics, telecommunications, digital signal transmission, computer systems architecture, and computer engineering. Coursework and engineering projects spanned Python programming, algorithmic facial recognition, automated systems, and software development.
               </p>
             </div>
           </div>
