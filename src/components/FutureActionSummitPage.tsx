@@ -16,7 +16,7 @@ import cameronAvatar from '../assets/cameron_hd.png';
 import clientLogosImg from '../assets/client_logos_hd.png';
 import mobirevoProjectImg from '../assets/mobirevo_project.png';
 import ravexProjectImg from '../assets/ravex_project.png';
-import cardLanding from '../assets/mockup_landing_hd.png';
+import examhallProjectImg from '../assets/examhall_project.png';
 import avatarFleece from '../assets/avatar_fleece_hd.png';
 import avatarAtika from '../assets/avatar_atika.png';
 import avatarJane from '../assets/avatar_jane.png';
@@ -653,30 +653,46 @@ export const FutureActionSummitPage: React.FC = () => {
             <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
-                  src={cardLanding}
-                  alt="Otto & Partners Cross-Border Operations"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={examhallProjectImg}
+                  alt="ExamHall.net - Complete Exam & Assessment Platform"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
-                  East Africa Delivery
+                  SDG 4: Quality Education
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Digital Operations & Consulting
+                  <div className="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2">
+                    EdTech & Assessment Infrastructure
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Otto & Partners Cross-Border Platform
+                    <a
+                      href="https://examhall.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-indigo-400 transition-colors inline-flex items-center gap-1.5"
+                    >
+                      <span>ExamHall.net</span>
+                      <span className="text-xs text-indigo-400">↗</span>
+                    </a>
                   </h3>
                   <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Regional technical project pipeline delivering digital consulting, product management, and systems integration across East Africa.
+                    Complete exam and assessment platform for institutions, corporates, and students—building digital infrastructure for examination management, automated grading, assessment, and test preparation.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Technical PM</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Cross-Border Ops</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Exit Success</span>
+                  <a
+                    href="https://examhall.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 transition-colors"
+                  >
+                    examhall.net ↗
+                  </a>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Advisory Board</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">EdTech Infrastructure</span>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Assessment & Grading</span>
                 </div>
               </div>
             </div>

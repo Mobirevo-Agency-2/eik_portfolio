@@ -1,7 +1,7 @@
 import React from 'react';
 import mockupWebsite from '../assets/mobirevo_project.png';
 import mockupApp from '../assets/ravex_project.png';
-import mockupLanding from '../assets/mockup_landing_hd.png';
+import mockupLanding from '../assets/examhall_project.png';
 
 interface Project {
   title: string;
@@ -19,7 +19,7 @@ export const Projects: React.FC = () => {
       image: mockupApp,
     },
     {
-      title: 'Otto & Partners Enterprise Systems',
+      title: 'ExamHall.net: Complete Exam & Assessment Platform for Institutions, Corporates & Students',
       image: mockupLanding,
     },
   ];
