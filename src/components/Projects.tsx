@@ -1,6 +1,6 @@
 import React from 'react';
 import mockupWebsite from '../assets/mobirevo_project.png';
-import mockupApp from '../assets/mockup_app_hd.png';
+import mockupApp from '../assets/ravex_project.png';
 import mockupLanding from '../assets/mockup_landing_hd.png';
 
 interface Project {
