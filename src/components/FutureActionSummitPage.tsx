@@ -323,49 +323,7 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
 
           <div className="space-y-4">
-            {/* Experience Item 1 */}
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-                  <h3 className="text-xl font-bold text-white">
-                    System Analyst & Technical Project Manager
-                  </h3>
-                </div>
-                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  Feb 2021 - Present
-                </span>
-              </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Mobirevo • Port Harcourt, Rivers State, Nigeria
-              </div>
-              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Directing systems analysis, technical requirements architecture, and software project management. Coordinating engineering teams to engineer, test, and deploy resilient, high-performance web and mobile enterprise applications.
-              </p>
-            </div>
-
-            {/* Experience Item 2 */}
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-                  <h3 className="text-xl font-bold text-white">
-                    Founder & Chief Executive Officer
-                  </h3>
-                </div>
-                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
-                  Sep 2023 - Present
-                </span>
-              </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Ravex • Lagos State, Nigeria
-              </div>
-              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
-                Spearheading product vision, technical architecture, and strategic growth for Ravex—a digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
-              </p>
-            </div>
-
-            {/* Experience Item 3 */}
+            {/* Experience Item 1: ForbesBLK */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -386,7 +344,49 @@ export const FutureActionSummitPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Experience Item 4 */}
+            {/* Experience Item 2: Ravex */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <h3 className="text-xl font-bold text-white">
+                    Founder & Chief Executive Officer
+                  </h3>
+                </div>
+                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
+                  Sep 2023 - Present
+                </span>
+              </div>
+              <div className="text-sm font-medium text-[#8e8e93] mb-4">
+                Ravex • Lagos State, Nigeria
+              </div>
+              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
+                Spearheading product vision, technical architecture, and strategic growth for Ravex—a digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
+              </p>
+            </div>
+
+            {/* Experience Item 3: Mobirevo (System Analyst & Technical PM) */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <h3 className="text-xl font-bold text-white">
+                    System Analyst & Technical Project Manager
+                  </h3>
+                </div>
+                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
+                  Feb 2021 - Present
+                </span>
+              </div>
+              <div className="text-sm font-medium text-[#8e8e93] mb-4">
+                Mobirevo • Port Harcourt, Rivers State, Nigeria
+              </div>
+              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
+                Directing systems analysis, technical requirements architecture, and software project management. Coordinating engineering teams to engineer, test, and deploy resilient, high-performance web and mobile enterprise applications.
+              </p>
+            </div>
+
+            {/* Experience Item 4: Mobirevo (Founder & BDM) */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -407,7 +407,7 @@ export const FutureActionSummitPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Experience Item 5 */}
+            {/* Experience Item 5: Otto & Partners */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
