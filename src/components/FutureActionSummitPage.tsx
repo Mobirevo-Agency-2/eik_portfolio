@@ -16,7 +16,12 @@ import {
 } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
 import cameronAvatar from '../assets/cameron_hd.png';
-import clientLogosImg from '../assets/client_logos_hd.png';
+import logoForbes from '../assets/logo_forbes.png';
+import logoBusinessInsider from '../assets/logo_business_insider.png';
+import logoBloomberg from '../assets/logo_bloomberg.png';
+import logoTechcrunch from '../assets/logo_techcrunch.png';
+import logoTechnext from '../assets/logo_technext.png';
+import logoYahooFinance from '../assets/logo_yahoo_finance.png';
 import mobirevoProjectImg from '../assets/mobirevo_project.png';
 import ravexProjectImg from '../assets/ravex_project.png';
 import examhallProjectImg from '../assets/examhall_project.png';
@@ -1153,19 +1158,56 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 9. GLOBAL PARTNERS / INSTITUTIONAL COLLABORATORS */}
+        {/* 9. GLOBAL PARTNERS / FEATURED MEDIA */}
         <section className="py-12 border-t border-white/[0.08]">
-          <div className="text-center mb-6">
+          <div className="text-center mb-8">
             <span className="text-xs font-semibold tracking-wider uppercase text-[#737373]">
-              Collaborators & Platforms That Trust Our Frameworks
+              Our clients were featured on
             </span>
           </div>
-          <div className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
-            <img
-              src={clientLogosImg}
-              alt="Global Collaborators"
-              className="h-10 sm:h-12 w-auto object-contain brightness-125"
-            />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 items-center justify-items-center max-w-5xl mx-auto px-4">
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoForbes}
+                alt="Forbes"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoBusinessInsider}
+                alt="Business Insider"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoBloomberg}
+                alt="Bloomberg"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoTechcrunch}
+                alt="TechCrunch"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoTechnext}
+                alt="Technext"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoYahooFinance}
+                alt="Yahoo! Finance"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
           </div>
         </section>
 
