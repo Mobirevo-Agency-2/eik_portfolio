@@ -1072,7 +1072,60 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 8. RECOMMENDATIONS & PEER ENDORSEMENTS */}
+        {/* 8. FEATURED MEDIA COVERAGE */}
+        <section className="py-12 border-t border-white/[0.08]">
+          <div className="text-center mb-8">
+            <span className="text-xs font-semibold tracking-wider uppercase text-[#737373]">
+              Projects I have been involved in — were featured on
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 items-center justify-items-center max-w-5xl mx-auto px-4">
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoForbes}
+                alt="Forbes"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoBusinessInsider}
+                alt="Business Insider"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoBloomberg}
+                alt="Bloomberg"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoTechcrunch}
+                alt="TechCrunch"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoTechnext}
+                alt="Technext"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center w-full h-12">
+              <img
+                src={logoYahooFinance}
+                alt="Yahoo! Finance"
+                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* 9. RECOMMENDATIONS & PEER ENDORSEMENTS */}
         <section className="py-16 sm:py-20 border-t border-white/[0.08]">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
@@ -1155,59 +1208,6 @@ export const FutureActionSummitPage: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* 9. GLOBAL PARTNERS / FEATURED MEDIA */}
-        <section className="py-12 border-t border-white/[0.08]">
-          <div className="text-center mb-8">
-            <span className="text-xs font-semibold tracking-wider uppercase text-[#737373]">
-              Our clients were featured on
-            </span>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 items-center justify-items-center max-w-5xl mx-auto px-4">
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoForbes}
-                alt="Forbes"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoBusinessInsider}
-                alt="Business Insider"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoBloomberg}
-                alt="Bloomberg"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoTechcrunch}
-                alt="TechCrunch"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoTechnext}
-                alt="Technext"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full h-12">
-              <img
-                src={logoYahooFinance}
-                alt="Yahoo! Finance"
-                className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
           </div>
         </section>
 
