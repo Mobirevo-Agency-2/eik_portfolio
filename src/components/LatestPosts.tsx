@@ -3,10 +3,16 @@ import { BlogPost, BLOG_POSTS } from '../data/posts';
 import { ArrowUpRight } from 'lucide-react';
 
 interface LatestPostsProps {
+  posts?: BlogPost[];
   onSelectPost?: (post: BlogPost) => void;
 }
 
-export const LatestPosts: React.FC<LatestPostsProps> = ({ onSelectPost }) => {
+export const LatestPosts: React.FC<LatestPostsProps> = ({ posts = BLOG_POSTS, onSelectPost }) => {
+  // If there are no live posts available from the API, hide the entire section
+  if (!posts || posts.length === 0) {
+    return null;
+  }
+
   return (
     <section className="py-12 sm:py-16">
       <h2 className="text-2xl sm:text-3xl font-bold text-white mb-10 sm:mb-14">
@@ -14,7 +20,7 @@ export const LatestPosts: React.FC<LatestPostsProps> = ({ onSelectPost }) => {
       </h2>
 
       <div className="space-y-10 sm:space-y-12 max-w-3xl">
-        {BLOG_POSTS.map((post) => (
+        {posts.map((post) => (
           <article
             key={post.slug}
             onClick={() => onSelectPost?.(post)}

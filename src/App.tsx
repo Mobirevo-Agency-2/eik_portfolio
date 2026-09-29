@@ -12,11 +12,25 @@ import { Footer } from './components/Footer';
 import { BlogPostPage } from './components/BlogPostPage';
 import { HeavyEquipmentPage } from './components/HeavyEquipmentPage';
 import { FutureActionSummitPage } from './components/FutureActionSummitPage';
-import { BlogPost, BLOG_POSTS } from './data/posts';
+import { BlogPost, BLOG_POSTS, fetchBlogPosts } from './data/posts';
 
 export const App: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<string>('home');
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const [posts, setPosts] = useState<BlogPost[]>(BLOG_POSTS);
+
+  // Attempt to fetch live blog posts if an API endpoint is configured
+  useEffect(() => {
+    let isMounted = true;
+    fetchBlogPosts().then((fetched) => {
+      if (isMounted && fetched && fetched.length > 0) {
+        setPosts(fetched);
+      }
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Sync route based on window.location.pathname and window.location.hash
   useEffect(() => {
@@ -48,7 +62,7 @@ export const App: React.FC = () => {
 
       if (hash.startsWith('#blog/')) {
         const slug = hash.replace('#blog/', '');
-        const found = BLOG_POSTS.find((p) => p.slug === slug);
+        const found = posts.find((p) => p.slug === slug);
         if (found) {
           setSelectedPost(found);
           setCurrentRoute('home');
@@ -69,7 +83,7 @@ export const App: React.FC = () => {
       window.removeEventListener('popstate', syncRoute);
       window.removeEventListener('hashchange', syncRoute);
     };
-  }, []);
+  }, [posts]);
 
   const handleSelectPost = (post: BlogPost) => {
     setSelectedPost(post);
@@ -97,6 +111,7 @@ export const App: React.FC = () => {
     return (
       <BlogPostPage
         post={selectedPost}
+        allPosts={posts}
         onBack={handleBackToPortfolio}
         onSelectPost={handleSelectPost}
       />
@@ -115,7 +130,7 @@ export const App: React.FC = () => {
         <Services />
         <Projects />
         <Testimonials />
-        <LatestPosts onSelectPost={handleSelectPost} />
+        <LatestPosts posts={posts} onSelectPost={handleSelectPost} />
         <Footer />
       </main>
     </div>

@@ -16,7 +16,33 @@ export interface BlogPost {
   };
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+/**
+ * Live Blog Posts collection.
+ * Default is empty so the section remains hidden until connected to a live API.
+ */
+export const BLOG_POSTS: BlogPost[] = [];
+
+/**
+ * Asynchronously fetch blog posts from an external REST API or headless CMS.
+ * Returns empty array if no endpoint is configured or if fetch fails.
+ */
+export const fetchBlogPosts = async (): Promise<BlogPost[]> => {
+  const apiUrl = (import.meta as any).env?.VITE_BLOG_API_URL;
+  if (!apiUrl) {
+    return [];
+  }
+  try {
+    const res = await fetch(apiUrl);
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.warn('Failed to fetch blog posts from API:', err);
+    return [];
+  }
+};
+
+export const MOCK_BLOG_POSTS: BlogPost[] = [
   {
     slug: 'designing-a-mobile-platform',
     title: 'Designing a Mobile Platform',

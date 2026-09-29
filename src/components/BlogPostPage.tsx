@@ -1,21 +1,24 @@
 import React, { useEffect } from 'react';
 import { ArrowLeft, Clock, Calendar, Share2, ArrowRight } from 'lucide-react';
-import { BlogPost, BLOG_POSTS } from '../data/posts';
+import { BlogPost } from '../data/posts';
 import cameronAvatar from '../assets/cameron_hd.png';
 
 interface BlogPostPageProps {
   post: BlogPost;
+  allPosts?: BlogPost[];
   onBack: () => void;
   onSelectPost: (post: BlogPost) => void;
 }
 
-export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onSelectPost }) => {
+export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, allPosts = [], onBack, onSelectPost }) => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [post]);
 
-  const currentIndex = BLOG_POSTS.findIndex((p) => p.slug === post.slug);
-  const nextPost = BLOG_POSTS[(currentIndex + 1) % BLOG_POSTS.length];
+  const currentIndex = allPosts.findIndex((p) => p.slug === post.slug);
+  const nextPost = allPosts.length > 1 && currentIndex !== -1
+    ? allPosts[(currentIndex + 1) % allPosts.length]
+    : null;
 
   return (
     <div className="min-h-screen bg-[#181818] text-white">
@@ -132,27 +135,29 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onSele
         </div>
 
         {/* Next Post Recommendation */}
-        <div className="mt-20 pt-10 border-t border-[#262626]">
-          <span className="text-xs uppercase tracking-wider text-[#8e8e93] font-semibold block mb-4">
-            Next Reading
-          </span>
-          <button
-            onClick={() => onSelectPost(nextPost)}
-            className="w-full text-left p-6 sm:p-8 rounded-2xl border border-[#2d2d2d] bg-[#1c1c1c] hover:border-blue-500/50 hover:bg-[#202020] transition-all group flex items-center justify-between"
-          >
-            <div>
-              <span className="text-xs text-[#3b82f6] font-medium block mb-1">
-                {nextPost.category} • {nextPost.readTime}
-              </span>
-              <h4 className="text-lg sm:text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
-                {nextPost.title}
-              </h4>
-            </div>
-            <div className="w-10 h-10 rounded-full bg-white/[0.05] group-hover:bg-[#2563eb] text-white flex items-center justify-center shrink-0 transition-colors">
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </div>
-          </button>
-        </div>
+        {nextPost && (
+          <div className="mt-20 pt-10 border-t border-[#262626]">
+            <span className="text-xs uppercase tracking-wider text-[#8e8e93] font-semibold block mb-4">
+              Next Reading
+            </span>
+            <button
+              onClick={() => onSelectPost(nextPost)}
+              className="w-full text-left p-6 sm:p-8 rounded-2xl border border-[#2d2d2d] bg-[#1c1c1c] hover:border-blue-500/50 hover:bg-[#202020] transition-all group flex items-center justify-between"
+            >
+              <div>
+                <span className="text-xs text-[#3b82f6] font-medium block mb-1">
+                  {nextPost.category} • {nextPost.readTime}
+                </span>
+                <h4 className="text-lg sm:text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
+                  {nextPost.title}
+                </h4>
+              </div>
+              <div className="w-10 h-10 rounded-full bg-white/[0.05] group-hover:bg-[#2563eb] text-white flex items-center justify-center shrink-0 transition-colors">
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </button>
+          </div>
+        )}
 
         {/* Back Button */}
         <div className="mt-12 text-center">
