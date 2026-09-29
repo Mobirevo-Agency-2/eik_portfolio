@@ -309,7 +309,28 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
 
           <div className="space-y-4">
-            {/* Experience Item 1: ForbesBLK */}
+            {/* Experience Item 1: ExamHall.net */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <h3 className="text-xl font-bold text-white">
+                    Member of the Board of Advisors
+                  </h3>
+                </div>
+                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
+                  Feb 2026 - Present
+                </span>
+              </div>
+              <div className="text-sm font-medium text-[#8e8e93] mb-4">
+                ExamHall.net • EdTech & Assessment Infrastructure
+              </div>
+              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
+                Serving on the Board of Advisors to provide strategic leadership, technology architecture guidance, and scaling advisory for ExamHall.net—a comprehensive digital examination and assessment platform empowering educational institutions, corporate enterprises, and students.
+              </p>
+            </div>
+
+            {/* Experience Item 2: ForbesBLK */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">

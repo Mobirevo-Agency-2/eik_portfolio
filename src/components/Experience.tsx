@@ -10,6 +10,12 @@ interface ExperienceItem {
 export const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
+      period: 'Feb 2026 - Present',
+      company: 'ExamHall.net',
+      location: 'EdTech & Assessment Infrastructure',
+      role: 'Member of the Board of Advisors',
+    },
+    {
       period: 'Sep 2023 - Present',
       company: 'ForbesBLK',
       location: 'Global Community',
