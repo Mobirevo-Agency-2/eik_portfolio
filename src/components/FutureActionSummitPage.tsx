@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import {
   ShieldCheck,
   Globe,
-  Leaf,
-  Brain,
   Award,
   FileCheck,
   Compass,
   CheckCircle2,
   MapPin,
   Mail,
+  BookOpen,
+  Briefcase,
+  Cpu,
+  Scale,
+  ExternalLink,
 } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
 import cameronAvatar from '../assets/cameron_hd.png';
@@ -69,15 +72,14 @@ export const FutureActionSummitPage: React.FC = () => {
                 <span>Future Action Summit 2026 • Australia Candidate</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-white leading-[1.12] mb-6">
-                Hi, I’m Ikechukwu Emmanuel Akwue.
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-white leading-[1.12] mb-3">
+                Ikechukwu Emmanuel Akwue
               </h1>
-              <p className="text-xl sm:text-2xl text-[#9a9a9f] font-normal leading-relaxed mb-8">
-                Founder, Technologist &{' '}
-                <span className="text-[#3b82f6] font-semibold">
-                  Sustainable Innovation Leader
-                </span>{' '}
-                applying as an Official Delegate & Contributor to the Future Action Summit in Australia.
+              <div className="text-lg sm:text-xl font-semibold text-blue-400 mb-5">
+                Technology Entrepreneur, Product Leader & Startup Advisor
+              </div>
+              <p className="text-base sm:text-lg text-[#9a9a9f] font-normal leading-relaxed mb-8 max-w-2xl">
+                Building and advising scalable ventures across software infrastructure, digital financial inclusion, and educational technology across Africa and North America. Applying as an Official Delegate & Contributor to the Future Action Summit in Australia.
               </p>
 
               {/* Action Buttons */}
@@ -163,58 +165,176 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 2. SUMMIT PILLARS ALIGNMENT */}
+        {/* 2. SUSTAINABLE DEVELOPMENT IMPACT */}
         <section className="py-16 sm:py-20 border-t border-white/[0.08]">
-          <div className="max-w-2xl mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 block">
-              Core Alignment
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-              Alignment With Future Action Summit Themes
-            </h2>
-            <p className="text-base sm:text-lg text-[#8e8e93] mt-3">
-              Addressing the central challenges deliberated at the Australian summit: environmental sustainability, ethical technological acceleration, and equitable global access.
-            </p>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+            <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 block">
+                UN SDG Framework
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                Sustainable Development Impact
+              </h2>
+              <p className="text-base text-[#8e8e93] mt-3">
+                Organizing venture leadership, systems architecture, and advisory roles around the United Nations Sustainable Development Goals.
+              </p>
+            </div>
+            <div className="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold w-fit">
+              4 Core SDGs Addressed
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Pillar 1 */}
-            <div className="p-7 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-blue-500/30 transition-all group">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
-                <Leaf className="w-6 h-6 text-emerald-400" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* SDG 4: Quality Education */}
+            <div className="p-7 sm:p-8 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-indigo-500/30 transition-all flex flex-col justify-between group">
+              <div>
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:scale-105 transition-transform">
+                    <BookOpen className="w-6 h-6" />
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                    SDG 4: Quality Education
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  ExamHall.net
+                </h3>
+                <div className="text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-4">
+                  Role: Member of the Board of Advisors
+                </div>
+                <p className="text-sm text-[#a1a1a6] leading-relaxed mb-4">
+                  <strong className="text-white font-medium">What the platform does:</strong> Digital examination and assessment infrastructure powering automated grading, test preparation, and secure assessment administration for institutions, corporates, and students.
+                </p>
+                <p className="text-sm text-[#8e8e93] leading-relaxed">
+                  <strong className="text-[#a1a1a6] font-medium">Emmanuel’s contribution:</strong> Strategic governance, systems scalability oversight, cloud assessment architecture, and institutional partnerships expanding equitable access to educational evaluation.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                Sustainable Digital Infrastructure
-              </h3>
-              <p className="text-sm text-[#8e8e93] leading-relaxed">
-                Pioneering carbon-aware web design, edge computing efficiency, and regenerative software architectures that significantly lower compute emissions across public and private infrastructure.
-              </p>
+              <div className="pt-5 mt-6 border-t border-white/[0.06] flex items-center justify-between">
+                <span className="text-xs text-[#8e8e93]">Automated Assessment & Grading</span>
+                <a
+                  href="https://examhall.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
 
-            {/* Pillar 2 */}
-            <div className="p-7 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-blue-500/30 transition-all group">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
-                <Brain className="w-6 h-6 text-blue-400" />
+            {/* SDG 8: Decent Work & Economic Growth */}
+            <div className="p-7 sm:p-8 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-amber-500/30 transition-all flex flex-col justify-between group">
+              <div>
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 group-hover:scale-105 transition-transform">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                    SDG 8: Decent Work & Growth
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Mobirevo Softwares & Technologies
+                </h3>
+                <div className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-4">
+                  Role: Founder & Managing Director / Systems Analyst
+                </div>
+                <p className="text-sm text-[#a1a1a6] leading-relaxed mb-4">
+                  <strong className="text-white font-medium">What the company does:</strong> Software and hardware engineering firm based in Nigeria with an active commercial presence in North America (Canada and the United States).
+                </p>
+                <p className="text-sm text-[#8e8e93] leading-relaxed">
+                  <strong className="text-[#a1a1a6] font-medium">Emmanuel’s contribution:</strong> Built a sustainable technology enterprise creating high-skilled technical employment for African engineers while developing scalable digital products and business infrastructure.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                Ethical AI & Algorithmic Governance
-              </h3>
-              <p className="text-sm text-[#8e8e93] leading-relaxed">
-                Formulating transparent human-in-the-loop workflows, bias mitigation protocols, and responsible AI governance models ensuring automated systems preserve equity and democratic trust.
-              </p>
+              <div className="pt-5 mt-6 border-t border-white/[0.06] flex items-center justify-between">
+                <span className="text-xs text-[#8e8e93]">High-Skilled Tech Employment</span>
+                <a
+                  href="https://mobirevo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
 
-            {/* Pillar 3 */}
-            <div className="p-7 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-blue-500/30 transition-all group">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
-                <Globe className="w-6 h-6 text-indigo-400" />
+            {/* SDG 9: Industry, Innovation & Infrastructure */}
+            <div className="p-7 sm:p-8 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-blue-500/30 transition-all flex flex-col justify-between group">
+              <div>
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform">
+                    <Cpu className="w-6 h-6" />
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                    SDG 9: Industry & Infrastructure
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Mobirevo • Monnee Inc. • Ravex
+                </h3>
+                <div className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-4">
+                  Role: Founder, Technical Lead & Systems Architect
+                </div>
+                <p className="text-sm text-[#a1a1a6] leading-relaxed mb-4">
+                  <strong className="text-white font-medium">What the platforms do:</strong> Mission-critical digital infrastructure, enterprise software architectures, transaction rails, and cloud backbones enabling commercial operations in the digital economy.
+                </p>
+                <p className="text-sm text-[#8e8e93] leading-relaxed">
+                  <strong className="text-[#a1a1a6] font-medium">Emmanuel’s contribution:</strong> Directing systems analysis, high-availability microservices architecture, and payment pipelines bridging emerging African markets with international financial standards.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                Asia-Pacific & Cross-Border Equity
-              </h3>
-              <p className="text-sm text-[#8e8e93] leading-relaxed">
-                Designing resilient, offline-first mobile utilities engineered specifically for bandwidth-limited regional zones, remote indigenous communities, and humanitarian disaster corridors.
-              </p>
+              <div className="pt-5 mt-6 border-t border-white/[0.06] flex items-center justify-between">
+                <span className="text-xs text-[#8e8e93]">Resilient Digital Systems</span>
+                <a
+                  href="https://ravex.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+
+            {/* SDG 10: Reduced Inequalities */}
+            <div className="p-7 sm:p-8 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
+              <div>
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
+                    <Scale className="w-6 h-6" />
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    SDG 10: Reduced Inequalities
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  Financial Inclusion & Cross-Border Rails
+                </h3>
+                <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-4">
+                  Initiatives: Monnee Inc. & Ravex.app
+                </div>
+                <p className="text-sm text-[#a1a1a6] leading-relaxed mb-4">
+                  <strong className="text-white font-medium">What the platforms do:</strong> Expanding financial inclusion for unbanked and underbanked users through affordable digital payments, utility access, and low-friction cross-border remittance corridors.
+                </p>
+                <p className="text-sm text-[#8e8e93] leading-relaxed">
+                  <strong className="text-[#a1a1a6] font-medium">Emmanuel’s contribution:</strong> Engineered fintech architectures that reduce punitive remittance fees, automate online bill payments, and democratize access to digital financial services.
+                </p>
+              </div>
+              <div className="pt-5 mt-6 border-t border-white/[0.06] flex items-center justify-between">
+                <span className="text-xs text-[#8e8e93]">Financial Inclusion & Cross-Border Access</span>
+                <a
+                  href="https://ravex.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -322,8 +442,17 @@ export const FutureActionSummitPage: React.FC = () => {
                   Feb 2026 - Present
                 </span>
               </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                ExamHall.net • EdTech & Assessment Infrastructure
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>ExamHall.net • EdTech & Assessment Infrastructure</span>
+                <a
+                  href="https://examhall.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
                 Serving on the Board of Advisors to provide strategic leadership, technology architecture guidance, and scaling advisory for ExamHall.net—a comprehensive digital examination and assessment platform empowering educational institutions, corporate enterprises, and students.
@@ -343,15 +472,24 @@ export const FutureActionSummitPage: React.FC = () => {
                   Sep 2023 - Present
                 </span>
               </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                ForbesBLK • Global Network
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>ForbesBLK • Global Network</span>
+                <a
+                  href="https://www.forbes.com/forbesblk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
                 Active member within the curated ForbesBLK global network of business executives, leaders, and entrepreneurs championing systemic change, economic equity, and community investment.
               </p>
             </div>
 
-            {/* Experience Item 2: Ravex */}
+            {/* Experience Item 3: Ravex */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -364,15 +502,46 @@ export const FutureActionSummitPage: React.FC = () => {
                   Sep 2023 - Present
                 </span>
               </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Ravex • Lagos State, Nigeria
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>Ravex • Lagos State, Nigeria</span>
+                <a
+                  href="https://ravex.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
                 Spearheading product vision, technical architecture, and strategic growth for Ravex—a digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
               </p>
             </div>
 
-            {/* Experience Item 3: Mobirevo (System Analyst & Technical PM) */}
+            {/* Experience Item 4: Monnee Inc. */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <h3 className="text-xl font-bold text-white">
+                    Co-Founder & Technical Architect
+                  </h3>
+                </div>
+                <span className="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 w-fit">
+                  Jan 2022 - Dec 2023
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>Monnee Inc. • Delaware, United States / Remote</span>
+                <span className="text-xs text-[#8e8e93]">Delaware Entity</span>
+              </div>
+              <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
+                Architected cross-border payment compliance routing, multi-currency ledger structures, and regulatory infrastructure for a Delaware-registered transnational financial solution designed to eliminate friction and reduce remittance costs between North America and African markets.
+              </p>
+            </div>
+
+            {/* Experience Item 5: Mobirevo (System Analyst & Technical PM) */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -385,15 +554,24 @@ export const FutureActionSummitPage: React.FC = () => {
                   Feb 2021 - Present
                 </span>
               </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Mobirevo • Port Harcourt, Rivers State, Nigeria
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>Mobirevo • Port Harcourt, Rivers State, Nigeria</span>
+                <a
+                  href="https://mobirevo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
                 Directing systems analysis, technical requirements architecture, and software project management. Coordinating engineering teams to engineer, test, and deploy resilient, high-performance web and mobile enterprise applications.
               </p>
             </div>
 
-            {/* Experience Item 4: Mobirevo (Founder & BDM) */}
+            {/* Experience Item 6: Mobirevo (Founder & BDM) */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -406,15 +584,24 @@ export const FutureActionSummitPage: React.FC = () => {
                   Feb 2018 - Jan 2021
                 </span>
               </div>
-              <div className="text-sm font-medium text-[#8e8e93] mb-4">
-                Mobirevo • Port Harcourt, Nigeria
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-medium text-[#8e8e93] mb-4">
+                <span>Mobirevo • Port Harcourt, Nigeria</span>
+                <a
+                  href="https://mobirevo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#a1a1a6] leading-relaxed">
                 Established Mobirevo as a bespoke software and product design firm. Led cross-functional teams delivering high-standard software solutions, client relationships, and business growth across Nigeria and international markets.
               </p>
             </div>
 
-            {/* Experience Item 5: Otto & Partners */}
+            {/* Experience Item 7: Otto & Partners */}
             <div className="p-6 sm:p-8 rounded-2xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-3">
@@ -551,16 +738,16 @@ export const FutureActionSummitPage: React.FC = () => {
                 Evidence of Execution
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                Selected Flagship Projects
+                Selected Flagship Projects & Case Studies
               </h2>
             </div>
             <p className="text-sm text-[#8e8e93] max-w-sm">
-              Showcasing quantifiable technological deliverables addressing systems architecture, resilience, and scale.
+              Structured proof of work detailing problems addressed, direct contributions, and measurable societal and economic outcomes.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Project 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Project 1: Mobirevo */}
             <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
@@ -568,47 +755,82 @@ export const FutureActionSummitPage: React.FC = () => {
                   alt="Mobirevo - Software & Hardware Company"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-amber-500/20 backdrop-blur-md border border-amber-500/30 text-amber-300 text-xs font-semibold">
+                  SDG 8 & 9: Work & Infrastructure
+                </div>
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-medium border border-white/10">
                   Nigeria & North America
                 </div>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
-                    Software & Hardware Company
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-white">
+                      <a
+                        href="https://mobirevo.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <span>Mobirevo</span>
+                        <ExternalLink className="w-4 h-4 text-blue-400" />
+                      </a>
+                    </h3>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                      Founder & Systems Analyst
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    <a
-                      href="https://mobirevo.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5"
-                    >
-                      <span>Mobirevo</span>
-                      <span className="text-xs text-blue-400">↗</span>
-                    </a>
-                  </h3>
-                  <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    A software and hardware company based in Nigeria with an active presence in North America (specifically Canada and the United States), building top-tier web, mobile, and hardware solutions.
-                  </p>
+
+                  <div className="space-y-3 mt-4 text-xs sm:text-sm">
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        The Problem
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Enterprises in Africa and international markets frequently struggle with engineering reliability bottlenecks, fragile architecture, and lack of resilient local technical talent to build production software.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        What Emmanuel Contributed
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Founded Mobirevo; directed systems analysis, technical requirements architecture, and engineering governance; assembled and mentored high-performing engineering teams building custom web, mobile, and hardware solutions.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
+                        Outcome & Measurable Impact
+                      </div>
+                      <p className="text-white font-medium leading-relaxed">
+                        Built a sustainable engineering enterprise operating from Nigeria with commercial clients across Canada and the United States, creating dozens of high-skilled technical jobs and shipping 50+ enterprise rollouts.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
+
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-5 mt-5 border-t border-white/[0.06] text-xs">
+                  <div className="flex flex-wrap gap-1.5 text-[#a1a1a6]">
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Web & Mobile Apps</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Hardware R&D</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">US/Canada Footprint</span>
+                  </div>
                   <a
                     href="https://mobirevo.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition-colors"
+                    className="font-semibold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1"
                   >
-                    mobirevo.com ↗
+                    <span>Visit Platform</span>
+                    <span>↗</span>
                   </a>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Web & Mobile Apps</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Hardware Solutions</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">US & Canada Presence</span>
                 </div>
               </div>
             </div>
 
-            {/* Project 2 */}
+            {/* Project 2: Ravex */}
             <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
@@ -616,47 +838,82 @@ export const FutureActionSummitPage: React.FC = () => {
                   alt="Ravex - Digital Financial & Utility Payments Platform"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                  SDG 9 & 10: Financial Inclusion
+                </div>
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-medium border border-white/10">
                   Nigeria & West Africa
                 </div>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
-                    Digital Financial & Utility Platform
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-white">
+                      <a
+                        href="https://ravex.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <span>Ravex (Ravex.app)</span>
+                        <ExternalLink className="w-4 h-4 text-emerald-400" />
+                      </a>
+                    </h3>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                      Founder & CEO
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    <a
-                      href="https://ravex.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5"
-                    >
-                      <span>Ravex (Ravex.app)</span>
-                      <span className="text-xs text-emerald-400">↗</span>
-                    </a>
-                  </h3>
-                  <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    A digital financial and utility payments platform primarily used in Nigeria and West Africa for managing online transactions, bills, and digital assets.
-                  </p>
+
+                  <div className="space-y-3 mt-4 text-xs sm:text-sm">
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        The Problem
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Fragmented payment gateways, exorbitant transaction charges, and settlement delays create severe friction for micro-enterprises and everyday users paying bills and transacting digital assets in West Africa.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        What Emmanuel Contributed
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Founded Ravex Innovation Labs; established product roadmap, security protocols, automated API liquidity integrations, and bank-grade encryption pipelines for seamless utility and digital asset transactions.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
+                        Outcome & Measurable Impact
+                      </div>
+                      <p className="text-white font-medium leading-relaxed">
+                        Delivered a high-throughput, secure financial utility ecosystem enabling thousands of everyday transactions, expanding financial inclusion and economic liquidity across West Africa.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
+
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-5 mt-5 border-t border-white/[0.06] text-xs">
+                  <div className="flex flex-wrap gap-1.5 text-[#a1a1a6]">
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Utility Payments</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Digital Assets</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Instant Settlement</span>
+                  </div>
                   <a
                     href="https://ravex.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+                    className="font-semibold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1"
                   >
-                    ravex.app ↗
+                    <span>Visit Platform</span>
+                    <span>↗</span>
                   </a>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Digital Financial Services</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Utility Payments</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Digital Assets & Bills</span>
                 </div>
               </div>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 3: ExamHall.net */}
             <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
               <div className="h-52 overflow-hidden bg-[#121212] relative">
                 <img
@@ -667,39 +924,143 @@ export const FutureActionSummitPage: React.FC = () => {
                 <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
                   SDG 4: Quality Education
                 </div>
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2">
-                    EdTech & Assessment Infrastructure
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    <a
-                      href="https://examhall.net/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-indigo-400 transition-colors inline-flex items-center gap-1.5"
-                    >
-                      <span>ExamHall.net</span>
-                      <span className="text-xs text-indigo-400">↗</span>
-                    </a>
-                  </h3>
-                  <p className="text-sm text-[#8e8e93] leading-relaxed mb-4">
-                    Complete exam and assessment platform for institutions, corporates, and students—building digital infrastructure for examination management, automated grading, assessment, and test preparation.
-                  </p>
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-medium border border-white/10">
+                  EdTech Infrastructure
                 </div>
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] text-xs text-[#a1a1a6]">
+              </div>
+              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-white">
+                      <a
+                        href="https://examhall.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-indigo-400 transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <span>ExamHall.net</span>
+                        <ExternalLink className="w-4 h-4 text-indigo-400" />
+                      </a>
+                    </h3>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                      Board of Advisors
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 mt-4 text-xs sm:text-sm">
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        The Problem
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Physical examination administration across institutions is fraught with logistical costs, manual grading delays, security leakages, and lack of standardized analytics for students preparing for crucial qualifications.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        What Emmanuel Contributed
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Serving on the Board of Advisors; steering technical governance, algorithmic grading reliability, platform scaling, and strategic integration with institutional stakeholders.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
+                        Outcome & Measurable Impact
+                      </div>
+                      <p className="text-white font-medium leading-relaxed">
+                        Engineered a robust, end-to-end examination platform offering automated grading and test prep that reduces administrative overhead and promotes equitable learning evaluation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-5 mt-5 border-t border-white/[0.06] text-xs">
+                  <div className="flex flex-wrap gap-1.5 text-[#a1a1a6]">
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Automated Grading</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Assessment Engine</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Test Prep</span>
+                  </div>
                   <a
                     href="https://examhall.net/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 hover:bg-indigo-500/20 transition-colors"
+                    className="font-semibold text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1"
                   >
-                    examhall.net ↗
+                    <span>Visit Platform</span>
+                    <span>↗</span>
                   </a>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Advisory Board</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">EdTech Infrastructure</span>
-                  <span className="px-2 py-0.5 rounded bg-white/[0.05]">Assessment & Grading</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 4: Monnee Inc. */}
+            <div className="rounded-3xl bg-[#1c1c1e] border border-white/[0.06] overflow-hidden flex flex-col group hover:border-white/10 transition-all">
+              <div className="h-52 bg-gradient-to-br from-[#0c1427] via-[#111f38] to-[#1e1b4b] relative flex items-center justify-center p-6 border-b border-white/[0.06]">
+                <div className="text-center">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto mb-3 shadow-lg group-hover:scale-105 transition-transform">
+                    <Scale className="w-7 h-7 text-emerald-400" />
+                  </div>
+                  <div className="text-xl font-bold text-white tracking-wide">Monnee Inc.</div>
+                  <div className="text-xs text-blue-300 font-medium mt-1">Cross-Border Payment Solution</div>
+                </div>
+                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                  SDG 10: Reduced Inequalities
+                </div>
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-medium border border-white/10">
+                  Delaware, USA
+                </div>
+              </div>
+              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-white">
+                      <span>Monnee Inc.</span>
+                    </h3>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                      Co-Founder & Technical Architect
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 mt-4 text-xs sm:text-sm">
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        The Problem
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        African businesses, freelancers, and diasporan families face punishing cross-border transfer fees (often averaging 7–9%), days-long clearing latency, and opaque FX conversion markups.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#8e8e93] mb-1">
+                        What Emmanuel Contributed
+                      </div>
+                      <p className="text-[#a1a1a6] leading-relaxed">
+                        Co-founded and formulated multi-currency ledger schemas, compliance routing frameworks, and transnational treasury management infrastructure adhering to Delaware corporate standards.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
+                        Outcome & Measurable Impact
+                      </div>
+                      <p className="text-white font-medium leading-relaxed">
+                        Established a compliant, low-friction cross-border payment corridor advancing UN SDG Target 10.c (reducing transaction costs of migrant remittances to under 3%).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-5 mt-5 border-t border-white/[0.06] text-xs">
+                  <div className="flex flex-wrap gap-1.5 text-[#a1a1a6]">
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Cross-Border Rails</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Delaware Registered</span>
+                    <span className="px-2 py-0.5 rounded bg-white/[0.05]">Remittance Equity</span>
+                  </div>
+                  <span className="text-xs text-[#8e8e93] font-medium">Delaware Entity</span>
                 </div>
               </div>
             </div>
