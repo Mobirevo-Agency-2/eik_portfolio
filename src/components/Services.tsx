@@ -1,5 +1,10 @@
 import { Cpu, Kanban, Layout, Rocket } from 'lucide-react';
-import clientLogosImg from '../assets/client_logos_hd.png';
+import logoForbes from '../assets/logo_forbes.png';
+import logoBusinessInsider from '../assets/logo_business_insider.png';
+import logoBloomberg from '../assets/logo_bloomberg.png';
+import logoTechcrunch from '../assets/logo_techcrunch.png';
+import logoTechnext from '../assets/logo_technext.png';
+import logoYahooFinance from '../assets/logo_yahoo_finance.png';
 
 interface ServiceItem {
   title: string;
@@ -38,7 +43,7 @@ export const Services: React.FC = () => {
       </h2>
 
       {/* 2x2 Services Grid across full container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-12 mb-20 max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-12 mb-16 max-w-4xl">
         {services.map((service) => (
           <div key={service.title} className="flex flex-col items-start">
             <div className="w-12 h-12 flex items-center justify-start mb-4">
@@ -54,13 +59,57 @@ export const Services: React.FC = () => {
         ))}
       </div>
 
-      {/* Client Logos Bar: Payoneer, Envato, Airbnb, Slack - Enlarged */}
-      <div className="pt-6 pb-16 flex items-center justify-start w-full max-w-2xl sm:max-w-3xl lg:max-w-4xl">
-        <img
-          src={clientLogosImg}
-          alt="Clients: Payoneer, Envato, Airbnb, Slack"
-          className="w-full h-auto object-contain opacity-85 hover:opacity-100 transition-opacity"
-        />
+      {/* Featured Media Coverage / Brand Logos matching /impact */}
+      <div className="pt-8 pb-12 border-t border-white/[0.08] w-full">
+        <div className="text-center sm:text-left mb-8">
+          <span className="text-xs font-semibold tracking-wider uppercase text-[#737373]">
+            Projects I have been involved in — were featured on
+          </span>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 items-center justify-items-center">
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoForbes}
+              alt="Forbes"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoBusinessInsider}
+              alt="Business Insider"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoBloomberg}
+              alt="Bloomberg"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoTechcrunch}
+              alt="TechCrunch"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoTechnext}
+              alt="Technext"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="flex items-center justify-center w-full h-12">
+            <img
+              src={logoYahooFinance}
+              alt="Yahoo! Finance"
+              className="max-h-7 sm:max-h-8 max-w-[130px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
