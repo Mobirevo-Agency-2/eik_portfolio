@@ -17,46 +17,32 @@ import clientLogosImg from '../assets/client_logos_hd.png';
 import mobirevoProjectImg from '../assets/mobirevo_project.png';
 import ravexProjectImg from '../assets/ravex_project.png';
 import examhallProjectImg from '../assets/examhall_project.png';
-import avatarFleece from '../assets/avatar_fleece_hd.png';
-import avatarAtika from '../assets/avatar_atika.png';
-import avatarJane from '../assets/avatar_jane.png';
+import avatarMitchell from '../assets/avatar_mitchell_player.png';
+import avatarJeff from '../assets/avatar_jeff_nelson.png';
 
 export const FutureActionSummitPage: React.FC = () => {
-  // Testimonials Carousel state
+  // Recommendations data from LinkedIn
   const endorsements = [
     {
-      name: 'Dr. Aris Thorne',
-      role: 'Director of Global Policy, Future Horizons Network',
-      avatar: avatarFleece,
+      name: 'Mitchell Player',
+      role: 'Branch Manager | Operations & P&L Leadership | Revenue Growth & Business Performance',
+      relationship: "Nov 27, 2020 • Mitchell was Ikechukwu's client",
+      linkedIn: 'https://www.linkedin.com/in/mitchell-player-408a341b3/',
+      avatar: avatarMitchell,
       quote:
-        'Ikechukwu’s perspective on ethical digital systems and sustainable innovation is exactly what Australia’s Future Action Summit champions. His presence as an international delegate will elevate our panels on tech-led climate resilience and scalable public infrastructure.',
+        'Emmanuel was very responsive and patient with me. Customer service doesn’t end upon completion with this guy he continues to follow up and ensure that my project is successful and I receive the best ROI possible. I recommend Emmanuel and his team to bring you vision to life.',
     },
     {
-      name: 'Sarah Chen',
-      role: 'Chief Innovation Officer, Pacific Impact Council',
-      avatar: avatarAtika,
+      name: 'Jeff Nelson, MBA, CMC',
+      role: 'Co-Founder • Author • Teacher • Consultant | Strategic Business & Marketing Alignment',
+      relationship: "Nov 25, 2020 • Jeff was senior to Ikechukwu",
+      linkedIn: 'https://www.linkedin.com/in/jeffxnelson/',
+      avatar: avatarJeff,
       quote:
-        'Ikechukwu represents the next generation of global changemakers—combining rigorous systems design with deep ecological and societal awareness. I wholeheartedly endorse his participation in the Future Action Summit.',
-    },
-    {
-      name: 'Marcus Vance',
-      role: 'Chairperson, Ethical Technology Roundtable',
-      avatar: avatarJane,
-      quote:
-        'A rare leader who turns complex sustainability targets into actionable, human-centered software architectures. Ikechukwu will be an indispensable contributor to the summit’s working groups and policy deliberations.',
+        'Emmanuel recently started a company called Mobirevo. You can see a list of service on his website, https://mobirevo.com/services/. Be sure to contact Emmanuel if you are looking for UX-UI Design, Brand identity design, Software development, Mobile app development, Website development, and Ecommerce development.',
     },
   ];
 
-  const [testiIndex, setTestiIndex] = useState(0);
-  const currentTesti = endorsements[testiIndex];
-
-  const handlePrevTesti = () => {
-    setTestiIndex((prev) => (prev === 0 ? endorsements.length - 1 : prev - 1));
-  };
-
-  const handleNextTesti = () => {
-    setTestiIndex((prev) => (prev === endorsements.length - 1 ? 0 : prev + 1));
-  };
 
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -699,68 +685,89 @@ export const FutureActionSummitPage: React.FC = () => {
           </div>
         </section>
 
-        {/* 8. LETTERS OF ENDORSEMENT / PEER TESTIMONIALS */}
+        {/* 8. RECOMMENDATIONS & PEER ENDORSEMENTS */}
         <section className="py-16 sm:py-20 border-t border-white/[0.08]">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 block">
-                Peer Endorsements
+                Recommendations & Endorsements
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                Letters of Support for Delegate Candidacy
+                Peer Endorsements & Recommendations
               </h2>
             </div>
-
-            {/* Carousel navigation controls */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handlePrevTesti}
-                aria-label="Previous endorsement"
-                className="w-10 h-10 rounded-full border border-white/10 hover:border-white/20 bg-[#1c1c1e] hover:bg-[#252528] flex items-center justify-center transition-colors text-white"
-              >
-                ←
-              </button>
-              <button
-                onClick={handleNextTesti}
-                aria-label="Next endorsement"
-                className="w-10 h-10 rounded-full border border-white/10 hover:border-white/20 bg-[#1c1c1e] hover:bg-[#252528] flex items-center justify-center transition-colors text-white"
-              >
-                →
-              </button>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/ikechukwu-akwue"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              <span>View on LinkedIn</span>
+              <span>↗</span>
+            </a>
           </div>
 
-          <div className="p-8 sm:p-10 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] relative">
-            <div className="flex items-start gap-4 sm:gap-6">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden shrink-0 border border-white/10">
-                <img
-                  src={currentTesti.avatar}
-                  alt={currentTesti.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="flex-1">
-                <blockquote className="text-lg sm:text-xl lg:text-2xl text-white font-normal leading-relaxed mb-6 italic">
-                  "{currentTesti.quote}"
-                </blockquote>
-
-                <div className="flex items-center justify-between border-t border-white/[0.08] pt-4">
-                  <div>
-                    <div className="text-base font-bold text-white">
-                      {currentTesti.name}
-                    </div>
-                    <div className="text-xs sm:text-sm text-[#8e8e93]">
-                      {currentTesti.role}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {endorsements.map((rec, index) => (
+              <div
+                key={index}
+                className="p-6 sm:p-8 rounded-3xl bg-[#1c1c1e] border border-white/[0.06] hover:border-white/10 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-start justify-between gap-3 mb-5">
+                    <div className="flex items-center gap-3.5">
+                      <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-white/10 bg-[#252528]">
+                        <img
+                          src={rec.avatar}
+                          alt={rec.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-1.5">
+                          <h3 className="text-base sm:text-lg font-bold text-white">
+                            {rec.name}
+                          </h3>
+                          {rec.linkedIn && (
+                            <a
+                              href={rec.linkedIn}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-400 hover:text-blue-300 transition-colors"
+                              title="View LinkedIn Profile"
+                            >
+                              <LinkedInIcon className="w-3.5 h-3.5 fill-current" />
+                            </a>
+                          )}
+                        </div>
+                        <p className="text-xs text-[#8e8e93] leading-snug mt-0.5 line-clamp-2">
+                          {rec.role}
+                        </p>
+                      </div>
                     </div>
                   </div>
 
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    Official Endorsement
-                  </span>
+                  <blockquote className="text-sm sm:text-base text-[#e5e5ea] font-normal leading-relaxed mb-6 italic">
+                    "{rec.quote}"
+                  </blockquote>
+                </div>
+
+                <div className="pt-4 border-t border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-[#8e8e93]">
+                  <span>{rec.relationship}</span>
+                  {rec.linkedIn && (
+                    <a
+                      href={rec.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1 font-medium"
+                    >
+                      <span>LinkedIn Profile</span>
+                      <span>↗</span>
+                    </a>
+                  )}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </section>
 

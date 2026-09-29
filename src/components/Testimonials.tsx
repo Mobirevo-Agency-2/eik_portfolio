@@ -1,38 +1,37 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import avatarFleece from '../assets/avatar_fleece_hd.png';
-import avatarAtika from '../assets/avatar_atika.png';
-import avatarJane from '../assets/avatar_jane.png';
+import { LinkedInIcon } from './Icons';
+import avatarMitchell from '../assets/avatar_mitchell_player.png';
+import avatarJeff from '../assets/avatar_jeff_nelson.png';
 
 interface TestimonialItem {
   name: string;
   role: string;
   avatar: string;
+  relationship: string;
+  linkedIn: string;
   quote: string;
 }
 
 export const Testimonials: React.FC = () => {
   const testimonials: TestimonialItem[] = [
     {
-      name: 'Fleece Marigold',
-      role: 'Product Director',
-      avatar: avatarFleece,
+      name: 'Mitchell Player',
+      role: 'Branch Manager | Operations & P&L Leadership | Revenue Growth & Business Performance',
+      relationship: "Nov 27, 2020 • Mitchell was Ikechukwu's client",
+      linkedIn: 'https://www.linkedin.com/in/mitchell-player-408a341b3/',
+      avatar: avatarMitchell,
       quote:
-        'As a technology partner, I was blown away by the precision and leadership demonstrated in Ikechukwu’s work at Mobirevo. His ability to transform complex requirements into scalable digital architectures is truly remarkable. Collaborating with him was seamless and inspiring.',
+        'Emmanuel was very responsive and patient with me. Customer service doesn’t end upon completion with this guy he continues to follow up and ensure that my project is successful and I receive the best ROI possible. I recommend Emmanuel and his team to bring you vision to life.',
     },
     {
-      name: 'Atika Jahin',
-      role: 'Engineering Lead, Fintech Systems',
-      avatar: avatarAtika,
+      name: 'Jeff Nelson, MBA, CMC',
+      role: 'Co-Founder • Author • Teacher • Consultant | Strategic Business & Marketing Alignment',
+      relationship: 'Nov 25, 2020 • Jeff was senior to Ikechukwu',
+      linkedIn: 'https://www.linkedin.com/in/jeffxnelson/',
+      avatar: avatarJeff,
       quote:
-        'Collaborating with Ikechukwu was an extraordinary experience. His ability to oversee full technical execution while maintaining rigorous architecture and agile delivery made our platform launch an enormous success.',
-    },
-    {
-      name: 'Jane Cooper',
-      role: 'Enterprise Systems Director',
-      avatar: avatarJane,
-      quote:
-        'Ikechukwu brings both strategic executive vision and deep technical empathy to every software product. An exceptional leader who transforms complex systems into seamless, reliable realities.',
+        'Emmanuel recently started a company called Mobirevo. You can see a list of service on his website, https://mobirevo.com/services/. Be sure to contact Emmanuel if you are looking for UX-UI Design, Brand identity design, Software development, Mobile app development, Website development, and Ecommerce development.',
     },
   ];
 
@@ -54,7 +53,7 @@ export const Testimonials: React.FC = () => {
         {/* Left Column: Heading */}
         <div className="w-full lg:w-1/4 shrink-0">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#8e8e93]">
-            Testimonials
+            Recommendations
           </h2>
         </div>
 
@@ -66,20 +65,36 @@ export const Testimonials: React.FC = () => {
           </blockquote>
 
           {/* Author and Navigation Controls */}
-          <div className="flex items-center justify-between gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
             {/* Author Profile */}
             <div className="flex items-center gap-4">
               <img
                 src={current.avatar}
                 alt={current.name}
-                className="w-12 h-12 rounded-full object-cover ring-2 ring-white/10"
+                className="w-12 h-12 rounded-full object-cover ring-2 ring-white/10 shrink-0 bg-[#252528]"
               />
               <div>
-                <h3 className="text-base sm:text-lg font-semibold text-white leading-tight">
-                  {current.name}
-                </h3>
-                <p className="text-sm text-[#8e8e93] font-normal mt-0.5">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base sm:text-lg font-semibold text-white leading-tight">
+                    {current.name}
+                  </h3>
+                  {current.linkedIn && (
+                    <a
+                      href={current.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                      title="View LinkedIn Profile"
+                    >
+                      <LinkedInIcon className="w-3.5 h-3.5 fill-current" />
+                    </a>
+                  )}
+                </div>
+                <p className="text-sm text-[#8e8e93] font-normal mt-0.5 line-clamp-1">
                   {current.role}
+                </p>
+                <p className="text-[11px] text-[#636366] mt-0.5">
+                  {current.relationship}
                 </p>
               </div>
             </div>
@@ -88,14 +103,14 @@ export const Testimonials: React.FC = () => {
             <div className="flex items-center gap-3">
               <button
                 onClick={handlePrev}
-                aria-label="Previous Testimonial"
+                aria-label="Previous Recommendation"
                 className="w-11 h-11 rounded-full border border-[#383838] hover:border-white/50 text-[#8e8e93] hover:text-white flex items-center justify-center transition-all active:scale-95"
               >
                 <ArrowLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={handleNext}
-                aria-label="Next Testimonial"
+                aria-label="Next Recommendation"
                 className="w-11 h-11 rounded-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white flex items-center justify-center transition-all shadow-md active:scale-95"
               >
                 <ArrowRight className="w-4 h-4" />
